@@ -1,6 +1,8 @@
 <template>
     <div>
-        <!-- we'll add back button up here later -->
+        <nav @click="goBack">
+            go back
+        </nav>
         <router-view :key="key" />
     </div>
 </template>
@@ -12,6 +14,11 @@ export default {
         key() {
             return this.$route.fullPath;
         },
+    },
+    methods: {
+        goBack(){
+            this.$router.go(-1)
+        }
     }
 }
 </script>

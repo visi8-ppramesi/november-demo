@@ -1,6 +1,58 @@
 <template>
-    <div class="bg-blurgh w-screen h-screen">
+    <div class="bg-blurgh">
+        <div style="color: white; text-align: center; font-size: 100px;">DSI</div>
 
+        <hr style="width: 90%; margin-top: 5%;" />
+
+        <div style="margin-top: 10%;">
+            <div>
+                <router-link :to="'/bells-society/'" class="link-type">
+                    <img :src="bellsSocietyLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+                    <p class="company-title">Bells <strong>Society</strong></p>
+                </router-link>
+            </div>
+
+            <div>
+                <router-link :to="'/senormal/'" class="link-type">
+                    <img :src="senormalLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
+                    <p class="company-title"><strong>Senormal</strong></p>
+                </router-link>
+            </div>
+
+            <div>
+                <router-link :to="'/nirmana-kinetik/'" class="link-type">
+                    <p style="font-family: Ribeye Marrow; text-align: center; color: white; margin-top: 18%; font-size: 45px;">Nirmana Kinetik</p>
+                </router-link>
+            </div>
+
+            <div style="margin-top: 15%;">
+                <router-link :to="'/matahari/'" class="link-type">
+                    <img :src="matahariLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img :src="matahariTextLogo" style=" width: 400px; display: block; margin-left: auto; margin-right: auto;" />
+                </router-link>
+            </div>
+
+            <div style="margin-top: 15%;">
+                <router-link :to="'/bluesville/'" class="link-type">
+                    <img :src="bluesvilleLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+                    <p class="company-title">bluesville</p>
+                </router-link>
+            </div>
+
+            <div style="margin-top: 15%;">
+                <router-link :to="'/biomagg/'" class="link-type">
+                    <img :src="biomaggLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+                    <p class="company-title">Biomagg</p>
+                </router-link>
+            </div>
+
+            <div>
+                <router-link :to="'/fabelio/'" class="link-type">
+                    <p style="text-align: center; color: white; margin-top: 18%; font-size: 45px;">Fabelio</p>
+                </router-link>
+            </div>
+
+        </div>
     </div>
 </template>
 
@@ -9,11 +61,27 @@ export default {
     name: 'landing',
     data(){
         return {
-            test: () => require('../scenes/test.html'),
+            bellsSocietyLogo: require('../assets/images/bells_society/Picture1.png'),
+            senormalLogo: require('../assets/images/senormal/logo.png'),
+            matahariLogo: require('../assets/images/matahari/logo.png'),
+            matahariTextLogo: require('../assets/images/matahari/text_logo.png'),
+            bluesvilleLogo: require('../assets/images/bluesville/logo.png'),
+            biomaggLogo: require('../assets/images/biomagg/logo.png')
         }
     },
     created(){
-        console.log(this.test())
     }
 }
 </script>
+
+<style scoped>
+    img {
+        width: 200px;
+    }
+
+    .company-title {
+        color: white;
+        font-size: 45px;
+        text-align: center;
+    }
+</style>
