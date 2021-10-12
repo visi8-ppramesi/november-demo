@@ -1,22 +1,22 @@
 <template>
     <div style="background-color: #1C1A1A;">
-        <div style="display: flex; justify-content: center;">
-            <img :src="logo" style="width: 270px; height: 270px; margin-top: 80px;" />
-            <div style="margin-left: 80px;">
-               <p style="font-size: 70px; color: white;">
-                    Bells <strong style="color: #5C4040;">Society</strong> 
-                    <br /> 
-                    science Discovers 
-                    <br /> 
-                    <strong style="color: #7E4C4C;">art Creates </strong>
-                </p>
+        <div class="px-4 py-6 flex content-center items-center justify-center align-center">
+            <img :src="logo" style="width: 33vw; max-width:150px" />
+            <div class="flex flex-col pl-2">
+                <div class="text-3xl mb-4">
+                    <span style="color:white">Bells</span> <strong style="color: #5C4040;">Society</strong> 
+                </div>
+                <div>
+                    <div class="text-xl" style="color:white; line-height:1rem;">science Discovers</div> 
+                    <strong class="text-xl" style="color: #7E4C4C; line-height:1rem;">art Creates </strong>
+                </div>
             </div>
         </div>
-
-        <hr style="width: 90%;"/>
-
+        <div class="px-4">
+            <hr class="my-2" style="color:white"/>
+        </div>
         <div>
-            <p style="color: white; text-align: center; margin: 80px;">
+            <p class="m-10" style="color: white; text-align: center;">
                 <strong style="color: #7E4C4C;">Bell Society</strong> is a biomaterial company that produces Misel, a eco sheet of cellulose that is strong.
                 <br /> <br />
                 <strong style="color: #7E4C4C;">Misel</strong> is made by converting organic waste resources that we collected by using the power of bacteria. 
@@ -28,40 +28,60 @@
             </p>
         </div>
 
-        <div>
-            <p style="color: white; text-align: center; font-size: 120px;">Our Team</p>
-            <img :src="founder1" style="border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
-            <p style="color: white; text-align: center; margin: 50px;">Arka Irfani <br />CEO/CTO and Founder</p>
-            <img :src="founder2" style="border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width="250px;" />
-            <p style="color: white; text-align: center; margin: 50px;">Semeru Gita L <br /> COO and Founder</p>
+        <div class="px-4">
+            <p style="color: white; text-align: center" class="text-3xl font-bold mb-4">Our Team</p>
+            <img :src="founder1" style="object-fit:cover; border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+            <p style="color: white; text-align: center;" class="my-8">Arka Irfani <br />CEO/CTO and Founder</p>
+            <img :src="founder2" style="object-fit:cover; border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width="250px;" />
+            <p style="color: white; text-align: center;" class="my-8">Semeru Gita L <br /> COO and Founder</p>
         </div>
 
-        <div>
-            <p style="color: white; font-size: 100px; margin-left: 70px;">Our Products</p>
-            <div class="container">
-                <div style="display: flex;">
+        <div class="px-4">
+            <p style="color: white;" class="text-xl">Our Products</p>
+
+            <div class="scrolling-wrapper">
+                <div class="w-screen card p-2 bg-white scroller-container mr-1">
                     <img :src="product1" />
+                    <div class="ar-button-container flex">
+                        <div class="ar-button text-xl">
+                            Show AR
+                        </div>
+                    </div>
+                </div>
+                <div class="w-screen card p-2 bg-white scroller-container mr-1">
                     <img :src="product2" />
+                    <div class="ar-button-container flex">
+                        <div class="ar-button text-xl">
+                            Show AR
+                        </div>
+                    </div>
+                </div>
+                <div class="w-screen card p-2 bg-white scroller-container mr-1">
                     <img :src="product3" />
+                    <div class="ar-button-container flex">
+                        <div class="ar-button text-xl">
+                            Show AR
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div style="display: flex; margin: 180px 50px 50px 50px;">
-            <p style="color: white; font-size: 50px; text-align: left; width: 400px;">One of DSI’s subsidiary, IIB (Ideanation) acquired 26% shares of Bell Society with the value of IDR 500 mio</p>
-            <div>
-                <img style="width: 400px; margin-top: 50px; margin-left: 40px;" :src="pic" />
+        <div style="display: flex;" class="px-4 py-6">
+            <p style="color: white;" class="mr-2">One of DSI’s subsidiary, IIB (Ideanation) acquired 26% shares of Bell Society with the value of IDR 500 mio</p>
+            <div class="bottom-image">
+                <img style="" :src="pic" />
             </div>
         </div>
 
-        <div style="display: flex; margin: 180px 50px 50px 50px;">
-            <div>
-                <img style="width: 400px; margin-top: 50px; margin-right: 40px; height: 500px;" :src="pic" />
+        <div style="display: flex;" class="px-4 py-6">
+            <div class="bottom-image">
+                <img :src="pic" />
             </div>
-            <p style="color: white; font-size: 50px; text-align: right; width: 400px;">Currently Bell Society owned one workshop in Bandung with production capacity of 100m2/month. Expected to be expanded to 300m2/month by using the investment proceed</p>
+            <p class="ml-2" style="color: white; text-align: right; width: 400px;">Currently Bell Society owned one workshop in Bandung with production capacity of 100m2/month. Expected to be expanded to 300m2/month by using the investment proceed</p>
         </div>
 
-        <div style="background-color: black; margin: 10%; border-radius: 5%;">
+        <div style="background-color: black; padding: 10%; border-radius: 5%;">
             <p style="color: white; text-align: center; padding: 10%;">
                 <strong>Future Project :</strong>
                 <br /> <br />
@@ -93,9 +113,70 @@ export default {
 </script>
 
 <style scoped>
+    .bottom-image{
+        max-width: 40vw;
+    }
     .container {
-    margin-left: 70px;
-    overflow-x:scroll;
-    width: 85%;
+        overflow-x: scroll;
+        max-width: 100vw;
+    }
+    .products img{
+        max-width: 100%;
+        height: auto;
+    }
+    .product-container{
+        width: 300px;
+        display: table;
+    }
+    .scrolling-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 5px;
+    }
+    .scrolling-wrapper.card{
+        flex: 0 0 auto;
+    }
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .scroller-container img{    
+        width: 100%;
+        height: calc(100% - 100px);
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .scroller-container{
+        /* max-height: 334px; */
+        min-width: 300px;
+        /* height: 205px; */
+        border-radius: 10px;
+        max-height: 400px;
+        background-color: white;
+    }
+
+    .image{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 80px;
+        max-width: 100%;
+    }
+    .scroller-block{
+        height: calc(100vh - 64px);
+        background-size: cover;
+        background-position: center;
+        max-height: 100%;
+    }
+    .ar-button-container{
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ar-button{
+        padding: 15px 30px;
+        background-color: rgb(28, 26, 26);
+        border-radius: 10px;
+        color: white;
     }
 </style>

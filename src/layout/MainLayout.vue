@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav @click="goBack">
+        <nav @click="goBack" v-if="$route.name !== 'LandingPage'">
             go back
         </nav>
         <router-view :key="key" />
@@ -14,6 +14,9 @@ export default {
         key() {
             return this.$route.fullPath;
         },
+    },
+    created(){
+        console.log(this.$route)
     },
     methods: {
         goBack(){

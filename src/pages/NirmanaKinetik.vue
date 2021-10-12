@@ -1,17 +1,21 @@
 <template>
-    <div style="background-color: #363C35;">
+    <div style="background-color: #363C35;" class="pb-4">
         <div>
             <p style="font-family: Ribeye Marrow; color: white; text-align: center; font-size: 50px;">Nirmana Kinetik</p>
         </div>
 
-        <hr style="width:90%"/>
+        <div class="px-4">
+            <hr style="color:white"/>
+        </div>
 
-        <iframe style="display: block; margin: 0 auto; margin-top: 70px;" width="750" height="345" :src="iframeSrc1">
-        </iframe>
-        <iframe style="display: block; margin: 0 auto; margin-top: 70px;" width="750" height="345" :src="iframeSrc2">
-        </iframe>
-        <iframe style="display: block; margin: 0 auto; margin-top: 70px;" width="750" height="345" :src="iframeSrc3">
-        </iframe>
+        <div class="px-4">
+            <iframe class="embed-video" :src="iframeSrc1">
+            </iframe>
+            <iframe class="embed-video" :src="iframeSrc2">
+            </iframe>
+            <iframe class="embed-video" :src="iframeSrc3">
+            </iframe>
+        </div>
     </div>
 </template>
 
@@ -27,3 +31,13 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+    .embed-video{
+        display: block; 
+        margin: 0 auto; 
+        margin-top: 16px; 
+        width:calc(100vw - 32px);
+        height: calc(0.5625 * (100vw - 32px));
+    }
+</style>

@@ -1,8 +1,10 @@
 <template>
-    <div class="bg-blurgh">
+    <div class="bg-blurgh pb-16">
         <div style="color: white; text-align: center; font-size: 100px;">DSI</div>
 
-        <hr style="width: 90%; margin-top: 5%;" />
+        <div class="px-4">
+            <hr class="my-2" />
+        </div>
 
         <div style="margin-top: 10%;">
             <div>

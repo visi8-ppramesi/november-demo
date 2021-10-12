@@ -1,13 +1,16 @@
 <template>
-    <div style="background-color: #34A453;">
+    <div style="background-color: #34A453;" class="pb-4">
         <div>
-            <img :src="logo" style=" width: 300px; display: block; margin-left: auto; margin-right: auto; margin-top: 10%;" />
+            <img :src="logo" class="py-4" style=" max-width: 300px; margin-left: auto; margin-right: auto;" />
         </div>
-        <hr style="width: 90%; margin-top: 5%;" />
 
-        <div>
+        <div class="px-4">
+            <hr class="my-2" style="color:white"/>
+        </div>
+
+        <div class="mb-12">
             <p style="text-align: left; margin: 5%; padding-right: 35%; color: white;">
-                <strong style="font-size: 50px;">What is Biomagg ?</strong>
+                <strong class="text-xl">What is Biomagg ?</strong>
                 <br /><br />
                 <strong style="color: #46E96A;">BIOMAGG</strong> is a start-up that focuses on processing organic waste, especially food waste, using bioconversion technology 
                 of black soldier flies (BSF) to create a circular economy. 
@@ -16,25 +19,25 @@
             </p>
         </div>
 
-        <div>
-            <p style="color: white; font-size: 70px; text-align: center;">Our Products</p>
+        <div class="mb-12">
+            <p class="text-2xl font-bold mb-4" style="color: white; text-align: center;">Our Products</p>
             <div class="container">
                 <div style="display: flex;">
-                    <img :src="product2" />
-                    <img :src="product3" />
-                    <img :src="product4" />
-                    <img :src="product5" />
-                    <img :src="product2" />
+                    <img class="slider-image" :src="product2" />
+                    <img class="slider-image" :src="product3" />
+                    <img class="slider-image" :src="product4" />
+                    <img class="slider-image" :src="product5" />
+                    <img class="slider-image" :src="product2" />
                 </div>
             </div>
         </div>
 
-        <div>
-            <p style="color: white; text-align: center; font-size: 70px;">Founder of Biomagg</p>
-            <img :src="founder1" style="border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
-            <p style="color: white; text-align: center; margin: 50px;">Aminudi <br />Founder and CEO</p>
-            <img :src="founder2" style="border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width="250px;" />
-            <p style="color: white; text-align: center; margin: 50px;">Pandudamai Insani Taufiq <br /> Founder and COO</p>
+        <div class="mb-12">
+            <p style="color: white; text-align: center;" class="text-2xl font-bold mb-4">Founder of Biomagg</p>
+            <img :src="founder1" style="border-radius: 50%; height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+            <p style="color: white; text-align: center;" class="mb-12 mt-4">Aminudi <br />Founder and CEO</p>
+            <img :src="founder2" style="border-radius: 50%; height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width="250px;" />
+            <p style="color: white; text-align: center;" class="mb-12 mt-4">Pandudamai Insani Taufiq <br /> Founder and COO</p>
         </div>
 
         <div style="background-color: #63D161; margin: 10%; border-radius: 5%;">
@@ -73,8 +76,41 @@ export default {
 
 <style scoped>
    .container {
-    margin-left: 50px;
-    overflow-x:scroll;
-    width: 90%;
+        padding-left: 10px;
+        overflow-x:scroll;
+        width: 100vw;
+    }
+    .scroller-container img{    
+        width: 100%;
+        height: calc(100% - 100px);
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    .scroller-container{
+        /* max-height: 334px; */
+        min-width: 300px;
+        /* height: 205px; */
+        border-radius: 10px;
+        max-height: 400px;
+        background-color: white;
+    }
+    .scrolling-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 5px;
+    }
+    .scrolling-wrapper.card{
+        flex: 0 0 auto;
+    }
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .slider-image{
+        margin-right: 10px;
+        border-radius: 10px;
     }
 </style>

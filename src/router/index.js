@@ -49,7 +49,7 @@ let routeBuilder = (name) => {
             {
                 path: 'index',
                 component: () => import('../pages/' + capitalCaseFormatter(name)),
-                name: titleCaseFormatter(name),
+                name: capitalCaseFormatter(name),
                 meta: { title: titleCaseFormatter(name), noCache: false }
             }
         ]
@@ -67,8 +67,8 @@ export const routes = [
             {
                 path: 'landing',
                 component: () => import('../pages/Landing'),
-                name: 'Landing Page',
-                meta: { title: 'landing', icon: 'dashboard', noCache: false },
+                name: 'LandingPage',
+                meta: { title: 'Landing Page', icon: 'dashboard', noCache: false },
             },
         ],
     },
