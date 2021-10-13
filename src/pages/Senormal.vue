@@ -1,211 +1,148 @@
 <template>
     <div style="background-color: #176E9F; ">
+        <div class="mb-5">
+            <div class="flex items-center justify-center">
+                <img class="w-12" :src="logo" />
+            </div>
+            <p class="text-center text-white font-bold text-xl">senormal</p>
+        </div>
+
+        <hr class="ml-5 mr-5" />
+
         <div>
-            <img :src="logo" style=" width: 150px; display: block; margin-left: auto; margin-right: auto;" />
-            <p style="color: white; text-align: center; font-size: 45px; line-height: 0%;"><strong>Senormal</strong></p>
+            <div style="background-color: #225F82;" class="float-right mt-10 rounded-tl-md rounded-bl-md w-60 sm:w-80">
+                <article class="w-60 p-5 text-white">
+                    <font class="font-bold text-xl">Who is senormal ?</font>
+                    <br /><br />
+                    Senormal is a household product brand
+                    that focuses on innovating everyday
+                    household items into magic cleaning
+                    tablets✨ Our main purpose as a brand
+                    is to minimize plastic waste while
+                    tightening family ties and creating a
+                    better environment for the whole
+                    family - it all started from the problems
+                    experience by our Co-founder, Devi and
+                    her daughter, Luna
+                </article>
+            </div>
+        </div>
 
-            <hr style="width: 90%;"/>
-
-            <div class="container-top">
-                <div class="card-top">
-                    <p style="color: white; padding: 30px; width: 500px; text-align: left; font-size: 40px;">
-                        <strong>Who is senormal ?</strong>
-                        <br /> <br />
-                        Senormal is a household product brand
-                        that focuses on innovating everyday
-                        household items into magic cleaning
-                        tablets✨ Our main purpose as a brand
-                        is to minimize plastic waste while
-                        tightening family ties and creating a
-                        better environment for the whole
-                        family - it all started from the problems
-                        experience by our Co-founder, Devi and
-                        her daughter, Luna
-                    </p>
+        <div class="founder text-white">
+            <div style="background-color: #176E9F;" class="mt-5 rounded-tr-md rounded-br-md w-60 sm:w-80">
+                <div class="p-3">
+                    <p class="ml-3">Karang Adjie</p>
+                    <div class="mt-3 flex items-center justify-center">
+                        <img class="w-24" :src="founder1" />
+                        <p class="text-center text-sm ml-3 w-24">CO-founder Chief Executive Officer</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div style="background-color: #176E9F;" class="mt-5 rounded-tr-md rounded-br-md w-60 sm:w-80">
+                <div class="p-3">
+                    <p class="ml-3">Devi Yolanda</p>
+                    <div class="mt-3 flex items-center justify-center">
+                        <img class="w-24" :src="founder2" />
+                        <p class="text-center text-sm ml-3 w-24">CO-founder Product, Category, and Operations</p>
+                    </div>
                 </div>
             </div>
 
-            <div style="margin-top: 110%;">
-                <div class="profile-card">
-                    <div style="margin: 5%;" >
-                        <p style="color: white; text-align: right; padding-top: 5%;">Karaeng Adjie</p>
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="founder1" />
-                            <p style="color: white; text-align: center; margin-top: 20%; font-size: 30px; font-weight: 900;">CO-founder Chief Executive Officer</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="profile-card">
-                    <div style="margin: 5%;" >
-                        <p style="color: white; text-align: right; padding-top: 5%;">Devi Yolanda</p>
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="founder2" />
-                            <p style="color: white; text-align: center; margin-top: 20%; font-size: 30px; font-weight: 900;">Co-Founder
-                                Product, Category and Operations</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="profile-card">
-                    <div style="margin: 5%;" >
-                        <p style="color: white; text-align: right; padding-top: 5%;">Xandega Tahanjuansya</p>
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="founder3" />
-                            <p style="color: white; text-align: center; margin-top: 20%; font-size: 30px; font-weight: 900;">Co-Founder
-                                Marketing & CX</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                   <p style="color: white; font-size: 30px; margin: 5%;">Our Products :</p>
-                   <div class="container">
-						<div style="display: flex;">
-							<img :src="product2" />
-							<img :src="product3" />
-							<img :src="product4" />
-							<img :src="product2" />
-							<img :src="product3" />
-							<img :src="product4" />
-						</div>
-					</div>
-                </div>
-
-                <div style="background-color: #95B8C2; width: 100%;">
-                    <p style="text-align: center; font: 20px; padding: 3%; margin-top: 10%;">Why Senormal ?</p>
-                </div>
-
-                <div class="footer-card">
-                    <div style="margin: 5%;" >
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="text1" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-card-right">
-                    <div class="card-text">
-                        <img style="padding: 5%;" :src="text2"/>
-                    </div>
-                </div>
-
-                <div class="footer-card2">
-                    <div style="margin: 5%;" >
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="text3" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-card-right2">
-                    <div class="card-text">
-                        <img style="padding: 5%;" :src="text4"/>
+            <div style="background-color: #176E9F;" class="mt-5 rounded-tr-md rounded-br-md w-60 sm:w-80">
+                <div class="p-3">
+                    <p class="ml-3">Xandega tahanjuansya</p>
+                    <div class="mt-3 flex items-center justify-center">
+                        <img class="w-24" :src="founder3" />
+                        <p class="text-center text-sm ml-3 w-24">CO-founder Marketing and CX</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <div>
-            <img :src="logo" style=" width: 150px; display: block; margin-left: auto; margin-right: auto;" />
-            <p style="color: white; text-align: center; font-size: 45px; line-height: 0%;"><strong>Senormal</strong></p>
-
-            <hr style="width: 90%;"/>
-
-            <div class="container-top">
-                <div class="card-top">
-                    <p style="color: white; padding: 30px; width: 500px; text-align: left; font-size: 40px;">
-                        <strong>Who is senormal ?</strong>
-                        <br /> <br />
-                        Senormal is a household product brand
-                        that focuses on innovating everyday
-                        household items into magic cleaning
-                        tablets✨ Our main purpose as a brand
-                        is to minimize plastic waste while
-                        tightening family ties and creating a
-                        better environment for the whole
-                        family - it all started from the problems
-                        experience by our Co-founder, Devi and
-                        her daughter, Luna
-                    </p>
+            <div class="text-2xl text-white px-5 pt-10">Our Products :</div>
+            <div>
+                <div class="image-container flex px-2 mt-3 h-52">
+                    <!-- <img class="ml-1 rounded-xl" :src="product1" /> -->
+                    <router-link to="/scene/company/senormal/model/product2">
+                        <img class="ml-1 rounded-xl" :src="product2" />
+                    </router-link>
+                    <router-link to="/scene/company/senormal/model/product3">
+                        <img class="ml-1 rounded-xl" :src="product3" />
+                    </router-link>
+                    <router-link to="/scene/company/senormal/model/product2">
+                        <img class="ml-1 rounded-xl" :src="product2" />
+                    </router-link>
+                    <router-link to="/scene/company/senormal/model/product3">
+                        <img class="ml-1 rounded-xl" :src="product3" />
+                    </router-link>
+                    <router-link to="/scene/company/senormal/model/product2">
+                        <img class="ml-1 rounded-xl" :src="product2" />
+                    </router-link>
+                    <router-link to="/scene/company/senormal/model/product3">
+                        <img class="ml-1 rounded-xl" :src="product3" />
+                    </router-link>
                 </div>
             </div>
+        </div>
 
-            <div style="margin-top: 110%;">
-                <div class="profile-card">
-                    <div style="margin: 5%;" >
-                        <p style="color: white; text-align: right; padding-top: 5%;">Karaeng Adjie</p>
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="founder1" />
-                            <p style="color: white; text-align: center; margin-top: 20%; font-size: 30px; font-weight: 900;">CO-founder Chief Executive Officer</p>
+        <div class="mt-3 pb-32">
+            <p class="text-center text-2xl py-3 mt-5" style="background-color: #95B8C2;">Why Senormal ?</p>
+            <div>
+                <div class="bg-white mt-5 rounded-tr-md rounded-br-md w-60">
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="bg-blue-200 w-6 h-6 rounded-full">
+                                <p class="text-center">1</p>
+                            </div>
+                            <div class="ml-3 font-bold text-m">Cost Efficient</div>
                         </div>
+                        <section class="text-xs ml-9 mt-2">
+                            By not having to re-buy plastic
+                            bottles and water.
+                        </section>
                     </div>
                 </div>
-    
-                <div class="profile-card">
-                    <div style="margin: 5%;" >
-                        <p style="color: white; text-align: right; padding-top: 5%;">Devi Yolanda</p>
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="founder2" />
-                            <p style="color: white; text-align: center; margin-top: 20%; font-size: 30px; font-weight: 900;">Co-Founder
-                                Product, Category and Operations</p>
+                <div class="absolute right-0 bg-white mt-5 rounded-tl-md rounded-bl-md w-60">
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="bg-purple-200 w-6 h-6 rounded-full">
+                                <p class="text-center">2</p>
+                            </div>
+                            <div class="ml-3 font-bold text-m">Functional</div>
                         </div>
+                        <section class="text-xs ml-9 mt-2">
+                            Performs better, and Made with family and
+                            environmentally safe ingredients.
+                        </section>
                     </div>
                 </div>
-    
-                <div class="profile-card">
-                    <div style="margin: 5%;" >
-                        <p style="color: white; text-align: right; padding-top: 5%;">Xandega Tahanjuansya</p>
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="founder3" />
-                            <p style="color: white; text-align: center; margin-top: 20%; font-size: 30px; font-weight: 900;">Co-Founder
-                                Marketing & CX</p>
+                <div class="bg-white mt-40 rounded-tr-md rounded-br-md w-60">
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="bg-red-200 w-6 h-6 rounded-full">
+                                <p class="text-center">3</p>
+                            </div>
+                            <div class="ml-3 font-bold text-m">Responsible</div>
                         </div>
+                        <section class="text-xs ml-9 mt-2">
+                            Cut down single plastic usage with our refillable tablets
+                        </section>
                     </div>
                 </div>
-                
-                <div>
-                   <p style="color: white; font-size: 30px; margin: 5%;">Our Products :</p>
-                   <div class="container">
-						<div style="display: flex;">
-							<img :src="product2" />
-							<img :src="product3" />
-							<img :src="product4" />
-							<img :src="product2" />
-							<img :src="product3" />
-							<img :src="product4" />
-						</div>
-					</div>
-                </div>
-
-                <div style="background-color: #95B8C2; width: 100%;">
-                    <p style="text-align: center; font: 20px; padding: 3%; margin-top: 10%;">Why Senormal ?</p>
-                </div>
-
-                <div class="footer-card">
-                    <div style="margin: 5%;" >
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="text1" />
+                <div class="absolute right-0 bg-white mt-7 rounded-tl-md rounded-bl-md w-60">
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="bg-green-200 w-6 h-6 rounded-full">
+                                <p class="text-center">4</p>
+                            </div>
+                            <div class="ml-3 font-bold text-m">Cost Efficient</div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="footer-card-right">
-                    <div class="card-text">
-                        <img style="padding: 5%;" :src="text2"/>
-                    </div>
-                </div>
-
-                <div class="footer-card2">
-                    <div style="margin: 5%;" >
-                        <div style="display: flex; margin-left: 52%;">
-                            <img :src="text3" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-card-right2">
-                    <div class="card-text">
-                        <img style="padding: 5%;" :src="text4"/>
+                        <section class="text-xs ml-9 mt-2">
+                            By not having to re-buy plastic
+                            bottles and water.
+                        </section>
                     </div>
                 </div>
             </div>
@@ -235,7 +172,19 @@ export default {
 </script>
 
 <style scoped>
-    .container-top {
+    .image-container{
+        overflow-x: scroll;
+        width: calc(100vw);
+    }
+    .founder {
+        margin-top: 145%;
+    }
+    @media (min-width: 640px) {
+        .founder {
+            margin-top: 80%;
+        }
+     }
+    /* .container-top {
         position: absolute;
         left: 49%;
         margin-top: 10%;
@@ -289,5 +238,5 @@ export default {
     .footer-card-right2 {
         position: absolute;
         left: 51%;
-    }
+    } */
 </style>

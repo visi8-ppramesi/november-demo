@@ -73,6 +73,18 @@ export const routes = [
         ],
     },
     ...builtRoute,
+    {
+        path: '/scene',
+        component: Layout,
+        children: [
+            {
+                path: 'company/:company/model/:model',
+                component: () => import('../pages/SceneViewer'),
+                name: 'SceneViewer',
+                meta: { title: 'Scene Viewer', icon: 'dashboard', noCache: false },
+            },
+        ],
+    },
 ]
 
 const createRouter = () => new Router({
