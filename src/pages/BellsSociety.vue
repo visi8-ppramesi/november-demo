@@ -41,27 +41,39 @@
 
             <div class="scrolling-wrapper">
                 <div class="w-screen card p-2 bg-white scroller-container mr-1">
-                    <img :src="product1" />
+                    <router-link to="/scene/company/bellssociety/model/product1">
+                        <img :src="product1" />
+                    </router-link>
                     <div class="ar-button-container flex">
-                        <div class="ar-button text-xl">
-                            Show AR
-                        </div>
+                        <router-link to="/scene/company/bellssociety/model/product1">
+                            <div class="ar-button text-xl">
+                                Show AR
+                            </div>
+                        </router-link>
                     </div>
                 </div>
                 <div class="w-screen card p-2 bg-white scroller-container mr-1">
-                    <img :src="product2" />
+                    <router-link to="/scene/company/bellssociety/model/product2">
+                        <img :src="product2" />
+                    </router-link>
                     <div class="ar-button-container flex">
-                        <div class="ar-button text-xl">
-                            Show AR
-                        </div>
+                        <router-link to="/scene/company/bellssociety/model/product2">
+                            <div class="ar-button text-xl">
+                                Show AR
+                            </div>
+                        </router-link>
                     </div>
                 </div>
                 <div class="w-screen card p-2 bg-white scroller-container mr-1">
-                    <img :src="product3" />
+                    <router-link to="/scene/company/bellssociety/model/product3">
+                        <img :src="product3" />
+                    </router-link>
                     <div class="ar-button-container flex">
-                        <div class="ar-button text-xl">
-                            Show AR
-                        </div>
+                        <router-link to="/scene/company/bellssociety/model/product3">
+                            <div class="ar-button text-xl">
+                                Show AR
+                            </div>
+                        </router-link>
                     </div>
                 </div>
             </div>

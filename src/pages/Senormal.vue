@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: #176E9F; ">
+    <div style="background-color: #3C81C1; ">
         <div class="mb-5">
             <div class="flex items-center justify-center">
                 <img class="w-12" :src="logo" />
@@ -63,27 +63,38 @@
         <div>
             <div class="text-2xl text-white px-5 pt-10">Our Products :</div>
             <div>
-                <div class="image-container flex px-2 mt-3 h-52">
-                    <!-- <img class="ml-1 rounded-xl" :src="product1" /> -->
+                <div class="px-5 scrolling-wrapper">
+                <div class="bg-white p-2 scroller-container mr-1">
                     <router-link to="/scene/company/senormal/model/product2">
-                        <img class="ml-1 rounded-xl" :src="product2" />
-                    </router-link>
-                    <router-link to="/scene/company/senormal/model/product3">
-                        <img class="ml-1 rounded-xl" :src="product3" />
-                    </router-link>
-                    <router-link to="/scene/company/senormal/model/product2">
-                        <img class="ml-1 rounded-xl" :src="product2" />
-                    </router-link>
-                    <router-link to="/scene/company/senormal/model/product3">
-                        <img class="ml-1 rounded-xl" :src="product3" />
-                    </router-link>
-                    <router-link to="/scene/company/senormal/model/product2">
-                        <img class="ml-1 rounded-xl" :src="product2" />
-                    </router-link>
-                    <router-link to="/scene/company/senormal/model/product3">
-                        <img class="ml-1 rounded-xl" :src="product3" />
+                        <img :src="product2" />
                     </router-link>
                 </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/senormal/model/product3">
+                        <img :src="product3" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/senormal/model/product4">
+                        <img :src="product4" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/senormal/model/product2">
+                        <img :src="product2" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/senormal/model/product3">
+                        <img :src="product3" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/senormal/model/product4">
+                        <img :src="product4" />
+                    </router-link>
+                </div>
+            </div>
             </div>
         </div>
 
@@ -162,10 +173,6 @@ export default {
             product2: require('../assets/images/senormal/product2.png'),
             product3: require('../assets/images/senormal/product3.png'),
             product4: require('../assets/images/senormal/product4.png'),
-            text1: require('../assets/images/senormal/text1.png'),
-            text2: require('../assets/images/senormal/text2.png'),
-            text3: require('../assets/images/senormal/text3.png'),
-            text4: require('../assets/images/senormal/text4.png'),
         }
     }
 }
@@ -178,6 +185,55 @@ export default {
     }
     .founder {
         margin-top: 145%;
+    }
+    .bottom-image{
+        max-width: 40vw;
+    }
+    .container {
+        overflow-x: scroll;
+        max-width: 100vw;
+    }
+    .products img{
+        max-width: 100%;
+        height: auto;
+    }
+    .product-container{
+        width: 300px;
+        display: table;
+    }
+    .scrolling-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 5px;
+    }
+    .scrolling-wrapper.card{
+        flex: 0 0 auto;
+    }
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .scroller-container img{    
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .scroller-container{
+        /* max-height: 334px; */
+        min-width: 150px;
+        /* height: 205px; */
+        border-radius: 10px;
+        max-height: 400px;
+        background-color: white;
+    }
+    .scroller-block{
+        height: calc(100vh - 64px);
+        background-size: cover;
+        background-position: center;
+        max-height: 100%;
     }
     @media (min-width: 640px) {
         .founder {
@@ -194,7 +250,6 @@ export default {
         border-radius: 10px;
         width: 100%;
     }
-
     .profile-card {
         background-color: #225F82;
         border-radius: 10px;
@@ -207,7 +262,6 @@ export default {
         overflow-x:scroll;
         width: 90%;
     }
-
     .footer-card {
         background-color: #ffffff;
         border-radius: 10px;
@@ -215,7 +269,6 @@ export default {
         right: 50%;
         margin-top: 10%;
     }
-
     .footer-card2 {
         background-color: #ffffff;
         border-radius: 10px;
@@ -223,18 +276,15 @@ export default {
         right: 50%;
         margin-top: 40%;
     }
-
     .card-text {
         background-color: #ffffff;
         border-radius: 10px;
         width: 100%;
     }
-
     .footer-card-right {
         position: absolute;
         left: 60%;
     }
-
     .footer-card-right2 {
         position: absolute;
         left: 51%;

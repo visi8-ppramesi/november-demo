@@ -21,13 +21,36 @@
 
         <div class="mb-12">
             <p class="text-2xl font-bold mb-4" style="color: white; text-align: center;">Our Products</p>
-            <div class="container">
-                <div style="display: flex;">
-                    <img class="slider-image" :src="product2" />
-                    <img class="slider-image" :src="product3" />
-                    <img class="slider-image" :src="product4" />
-                    <img class="slider-image" :src="product5" />
-                    <img class="slider-image" :src="product2" />
+            <div class="scrolling-wrapper">
+                <div class="bg-white p-2 scroller-container mr-1">
+                    <router-link to="/scene/company/biomagg/model/product2">
+                        <img :src="product2" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/biomagg/model/product3">
+                        <img :src="product3" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/biomagg/model/product4">
+                        <img :src="product4" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/biomagg/model/product5">
+                        <img :src="product5" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/biomagg/model/product4">
+                        <img :src="product4" />
+                    </router-link>
+                </div>
+                <div class="scroller-container mr-1">
+                    <router-link to="/scene/company/biomagg/model/product5">
+                        <img :src="product5" />
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -75,26 +98,20 @@ export default {
 </script>
 
 <style scoped>
-   .container {
-        padding-left: 10px;
-        overflow-x:scroll;
-        width: 100vw;
+   .bottom-image{
+        max-width: 40vw;
     }
-    .scroller-container img{    
-        width: 100%;
-        height: calc(100% - 100px);
-        -o-object-fit: cover;
-        object-fit: cover;
-        margin-right: 10px;
-        border-radius: 10px;
+    .container {
+        overflow-x: scroll;
+        max-width: 100vw;
     }
-    .scroller-container{
-        /* max-height: 334px; */
-        min-width: 300px;
-        /* height: 205px; */
-        border-radius: 10px;
-        max-height: 400px;
-        background-color: white;
+    .products img{
+        max-width: 100%;
+        height: auto;
+    }
+    .product-container{
+        width: 300px;
+        display: table;
     }
     .scrolling-wrapper{
         display: flex;
@@ -109,8 +126,25 @@ export default {
     .scrolling-wrapper::-webkit-scrollbar {
         display: none;
     }
-    .slider-image{
-        margin-right: 10px;
+    .scroller-container img{    
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
         border-radius: 10px;
+    }
+    .scroller-container{
+        /* max-height: 334px; */
+        min-width: 150px;
+        /* height: 205px; */
+        border-radius: 10px;
+        max-height: 400px;
+        background-color: white;
+    }
+    .scroller-block{
+        height: calc(100vh - 64px);
+        background-size: cover;
+        background-position: center;
+        max-height: 100%;
     }
 </style>

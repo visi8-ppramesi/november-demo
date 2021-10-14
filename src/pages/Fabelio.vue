@@ -15,7 +15,9 @@
                 <div class="px-5 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product1 />
+                            <router-link to="/scene/company/fabelio/model/product1">
+                                <img style="width: 85px;" :src="product1" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>
@@ -25,7 +27,9 @@
                 <div class="px-3 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product2 />
+                            <router-link to="/scene/company/fabelio/model/product2">
+                                <img style="width: 85px;" :src="product2" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>
@@ -35,7 +39,9 @@
                 <div class="px-1 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product3 />
+                            <router-link to="/scene/company/fabelio/model/product3">
+                                <img style="width: 85px;" :src="product3" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>
@@ -46,7 +52,9 @@
                 <div class="px-5 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product4 />
+                            <router-link to="/scene/company/fabelio/model/product4">
+                                <img style="width: 85px;" :src="product4" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>
@@ -56,7 +64,9 @@
                 <div class="px-3 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product5 />
+                            <router-link to="/scene/company/fabelio/model/product5">
+                                <img style="width: 85px;" :src="product5" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>
@@ -66,7 +76,9 @@
                 <div class="px-1 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product1 />
+                            <router-link to="/scene/company/fabelio/model/product1">
+                                <img style="width: 85px;" :src="product1" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>
@@ -77,7 +89,9 @@
                 <div class="hidden sm:block sm:mt-3 md: ml-5">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product1 />
+                            <router-link to="/scene/company/fabelio/model/product1">
+                                <img style="width: 85px;" :src="product1" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>
@@ -87,7 +101,9 @@
                 <div class="hidden sm:block sm:mt-3 md: ml-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
-                            <img style="width: 85px;" :src=product1 />
+                            <router-link to="/scene/company/fabelio/model/product1">
+                                <img style="width: 85px;" :src="product1" />
+                            </router-link>
                             <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
                                 View AR
                             </button>

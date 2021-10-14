@@ -47,10 +47,18 @@
             <div class="px-4 mb-12">
                 <p class="text-2xl font-bold" style="color: white; text-align: center;">Our Products</p>
                 <div style="display: grid; grid-template-columns: auto auto;">
-                    <img class="product" :src="product2" />
-                    <img class="product" :src="product3" />
-                    <img class="product" :src="product4" />
-                    <img class="product" :src="product5" />
+                    <router-link to="/scene/company/bluesville/model/product2">
+                        <img class="slider-image" :src="product2" />
+                    </router-link>
+                    <router-link to="/scene/company/bluesville/model/product3">
+                        <img class="slider-image" :src="product3" />
+                    </router-link>
+                    <router-link to="/scene/company/bluesville/model/product4">
+                        <img class="slider-image" :src="product4" />
+                    </router-link>
+                    <router-link to="/scene/company/bluesville/model/product5">
+                        <img class="slider-image" :src="product5" />
+                    </router-link>
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 <template>
     <div class="bg-blurgh pb-16">
-        <div style="color: white; text-align: center; font-size: 100px;">DSI</div>
+        <div style="color: white; text-align: center; font-size: 90px;">DSI</div>
 
         <div class="px-4">
             <hr class="my-2" />
@@ -9,14 +9,14 @@
         <div style="margin-top: 10%;">
             <div>
                 <router-link :to="'/bells-society/'" class="link-type">
-                    <img :src="bellsSocietyLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+                    <img :src="bellsSocietyLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
                     <p class="company-title">Bells <strong>Society</strong></p>
                 </router-link>
             </div>
 
             <div>
                 <router-link :to="'/senormal/'" class="link-type">
-                    <img :src="senormalLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img :src="senormalLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
                     <p class="company-title"><strong>Senormal</strong></p>
                 </router-link>
             </div>
@@ -29,21 +29,21 @@
 
             <div style="margin-top: 15%;">
                 <router-link :to="'/matahari/'" class="link-type">
-                    <img :src="matahariLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
-                    <img :src="matahariTextLogo" style=" width: 400px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img :src="matahariLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img :src="matahariTextLogo" style=" width: 270px; display: block; margin-left: auto; margin-right: auto;" />
                 </router-link>
             </div>
 
             <div style="margin-top: 15%;">
                 <router-link :to="'/bluesville/'" class="link-type">
-                    <img :src="bluesvilleLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+                    <img :src="bluesvilleLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
                     <p class="company-title">bluesville</p>
                 </router-link>
             </div>
 
             <div style="margin-top: 15%;">
                 <router-link :to="'/biomagg/'" class="link-type">
-                    <img :src="biomaggLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+                    <img :src="biomaggLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
                     <p class="company-title">Biomagg</p>
                 </router-link>
             </div>
@@ -77,6 +77,9 @@ export default {
 </script>
 
 <style scoped>
+    .width-40{
+        max-width: 40vw;
+    }
     img {
         width: 200px;
     }
