@@ -1,5 +1,10 @@
 const { colors: defaultColors } = require('tailwindcss/defaultTheme')
 const colors = {
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx',
+  ],
     ...defaultColors,
     blurgh: {
         light: '#3171ad',
@@ -9,7 +14,12 @@ const colors = {
 }
 
 module.exports = {
-        theme: {
-            colors: colors
-        }
-  }
+    purge: [
+        './src/**/*.html',
+        './src/**/*.vue',
+        './src/**/*.js',
+    ],
+    theme: {
+        colors: colors
+    }
+}
