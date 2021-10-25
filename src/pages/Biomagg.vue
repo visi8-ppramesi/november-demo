@@ -21,7 +21,12 @@
 
         <div class="mb-12">
             <p class="text-2xl font-bold mb-4" style="color: white; text-align: center;">Our Products</p>
-            <div class="scrolling-wrapper">
+            <div class="scrolling-wrapper px-1">
+                <div class="bg-white p-2 scroller-container mr-1">
+                    <router-link to="/scene/company/biomagg/model/product1">
+                        <img :src="product1" />
+                    </router-link>
+                </div>
                 <div class="bg-white p-2 scroller-container mr-1">
                     <router-link to="/scene/company/biomagg/model/product2">
                         <img :src="product2" />
@@ -43,13 +48,8 @@
                     </router-link>
                 </div>
                 <div class="scroller-container mr-1">
-                    <router-link to="/scene/company/biomagg/model/product4">
-                        <img :src="product4" />
-                    </router-link>
-                </div>
-                <div class="scroller-container mr-1">
-                    <router-link to="/scene/company/biomagg/model/product5">
-                        <img :src="product5" />
+                    <router-link to="/scene/company/biomagg/model/product6">
+                        <img :src="product6" />
                     </router-link>
                 </div>
             </div>
@@ -86,10 +86,12 @@ export default {
     data(){
         return {
             logo: require('../assets/images/biomagg/logo.png'),
+            product1: require('../assets/images/biomagg/product1.png'),
             product2: require('../assets/images/biomagg/product2.png'),
             product3: require('../assets/images/biomagg/product3.png'),
             product4: require('../assets/images/biomagg/product4.png'),
             product5: require('../assets/images/biomagg/product5.png'),
+            product6: require('../assets/images/biomagg/product6.png'),
             founder1: require('../assets/images/biomagg/founder1.png'),
             founder2: require('../assets/images/biomagg/founder2.png'),
         }
@@ -129,8 +131,8 @@ export default {
     .scroller-container img{    
         width: 100%;
         height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
+        -o-object-fit: none;
+        object-fit: none;
         border-radius: 10px;
     }
     .scroller-container{

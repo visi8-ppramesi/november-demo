@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "createScenes": "node createScenes.js",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "node createScenes.js && vue-cli-service serve",
+    "build": "node createScenes.js && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

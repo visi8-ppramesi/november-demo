@@ -79,21 +79,6 @@
                         <img :src="product4" />
                     </router-link>
                 </div>
-                <div class="scroller-container mr-1">
-                    <router-link to="/scene/company/senormal/model/product2">
-                        <img :src="product2" />
-                    </router-link>
-                </div>
-                <div class="scroller-container mr-1">
-                    <router-link to="/scene/company/senormal/model/product3">
-                        <img :src="product3" />
-                    </router-link>
-                </div>
-                <div class="scroller-container mr-1">
-                    <router-link to="/scene/company/senormal/model/product4">
-                        <img :src="product4" />
-                    </router-link>
-                </div>
             </div>
             </div>
         </div>

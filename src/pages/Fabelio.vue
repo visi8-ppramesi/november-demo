@@ -11,7 +11,7 @@
 
         <div>
             <p class="pl-5 pt-5 text-xl font-bold">Our Products :</p>
-            <div class="grid grid-cols-3 sm:grid-cols-6">
+            <div class="grid grid-cols-3 sm:grid-cols-4">
                 <div class="px-5 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="px-5 mt-3">
+                <!-- <div class="px-5 mt-3">
                     <div class="bg-gray-200 w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
                             <router-link to="/scene/company/fabelio/model/product4">
@@ -109,7 +109,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div>
                 <section>

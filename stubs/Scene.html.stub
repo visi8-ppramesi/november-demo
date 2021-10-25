@@ -33,6 +33,7 @@
         xrextras-two-finger-rotate
         xrextras-pinch-scale
         scale="%%entity_scale_x%% %%entity_scale_y%% %%entity_scale_z%%"
+        position="%%entity_position_x%% %%entity_position_y%% %%entity_position_z%%"
         shadow="cast: true; receive: false;">
     </a-entity>
     <a-entity

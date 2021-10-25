@@ -26,6 +26,18 @@ try {
                 let modelIdRegex = new RegExp('%%id%%', "g")
                 myTemplate = myTemplate.replace(modelIdRegex, _.camelCase(modelId))
 
+                if('entityPosition' in modelObj){
+                    ['x', 'y', 'z'].forEach((coord, idx) => {
+                        let entityPositionRegex = new RegExp('%%entity_position_' + coord + '%%', "g")
+                        myTemplate = myTemplate.replace(entityPositionRegex, modelObj.entityPosition[idx])
+                    })
+                }else{
+                    ['x', 'y', 'z'].forEach((coord, idx) => {
+                        let entityPositionRegex = new RegExp('%%entity_position_' + coord + '%%', "g")
+                        myTemplate = myTemplate.replace(entityPositionRegex, config.defaultEntityPosition[idx])
+                    })
+                }
+
                 if('entityScale' in modelObj){
                     ['x', 'y', 'z'].forEach((coord, idx) => {
                         let entityScaleRegex = new RegExp('%%entity_scale_' + coord + '%%', "g")

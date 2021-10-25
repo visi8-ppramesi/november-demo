@@ -56,7 +56,7 @@ let routeBuilder = (name) => {
     }
 }
 
-let builtRoute = ['bellsSociety', 'matahari', 'biomagg', 'bluesville', 'fabelio', 'nirmanaKinetik', 'senormal'].map(el => routeBuilder(el))
+let builtRoute = ['bellsSociety', 'matahari', 'biomagg', 'bluesville', 'fabelio', 'nirmanaKinetik', 'senormal', 'bobobox'].map(el => routeBuilder(el))
 
 export const routes = [
     {

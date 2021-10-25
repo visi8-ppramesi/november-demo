@@ -41,6 +41,22 @@
         </div>
 
         <div class="mb-4 pb-4">
+            <p class="text-2xl font-bold my-4" style="color: white; text-align: center;">Our Works</p>
+            <iframe class="embed-video" :src="iframeSrc1">
+            </iframe>
+            <iframe class="embed-video" :src="iframeSrc2">
+            </iframe>
+            <iframe class="embed-video" :src="iframeSrc3">
+            </iframe>
+            <iframe class="embed-video" :src="iframeSrc4">
+            </iframe>
+        </div>
+
+        <div class="px-4">
+            <hr style="color:white"/>
+        </div>
+
+        <div class="pb-4">
             <p class="text-2xl font-bold my-4" style="color: white; text-align: center;">Our Awards</p>
             <div>
                 <img class="cover-img" :src="award1"/>
@@ -74,6 +90,10 @@ export default {
             award2: require('../assets/images/matahari/award2.jpg'),
             award3: require('../assets/images/matahari/award3.jpg'),
             redBg: require('../assets/images/matahari/red_background.jpg'),
+            iframeSrc1: 'https://www.youtube.com/embed/KTHaVCWnAKo',
+            iframeSrc2: 'https://www.youtube.com/embed/CKxacX0J-s4',
+            iframeSrc3: 'https://www.youtube.com/embed/_Wtuu-8juq4',
+            iframeSrc4: 'https://www.youtube.com/embed/nctjD-eg0CQ',
         }
     }
 }
@@ -98,5 +118,12 @@ export default {
 
     .cover-img {
         width: 100%;
+    }
+    .embed-video{
+        display: block; 
+        margin: 0 auto; 
+        margin-top: 16px; 
+        width:100vw;
+        height: calc(0.5625 * 100vw);
     }
 </style>

@@ -24,9 +24,9 @@ export default {
     name: 'nirmana-kinetik',
     data(){
         return {
-            iframeSrc1: 'https://www.youtube.com/embed/tgbNymZ7vqY',
-            iframeSrc2: 'https://www.youtube.com/embed/tgbNymZ7vqY',
-            iframeSrc3: 'https://www.youtube.com/embed/tgbNymZ7vqY',
+            iframeSrc1: 'https://www.youtube.com/embed/uxA2vZ9xJlc',
+            iframeSrc2: 'https://www.youtube.com/embed/fFTHKrunpLk',
+            iframeSrc3: 'https://www.youtube.com/embed/GTE6iddOm4o',
         }
     },
 }

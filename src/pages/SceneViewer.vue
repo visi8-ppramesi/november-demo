@@ -10,6 +10,7 @@ export default {
         return {
             company: null,
             model: null,
+            origHtmlClass: '',
         }
     },
     created(){

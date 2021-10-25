@@ -14,46 +14,51 @@
                 </router-link>
             </div>
 
-            <div>
+            <div class="mt-12">
                 <router-link :to="'/senormal/'" class="link-type">
                     <img :src="senormalLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
                     <p class="company-title"><strong>Senormal</strong></p>
                 </router-link>
             </div>
 
-            <div>
+            <div class="mt-12">
                 <router-link :to="'/nirmana-kinetik/'" class="link-type">
-                    <p style="font-family: Ribeye Marrow; text-align: center; color: white; margin-top: 18%; font-size: 45px;">Nirmana Kinetik</p>
+                    <p style="font-family: Ribeye Marrow; text-align: center; color: white; font-size: 45px;">Nirmana Kinetik</p>
                 </router-link>
             </div>
 
-            <div style="margin-top: 15%;">
+            <div class="mt-12">
                 <router-link :to="'/matahari/'" class="link-type">
                     <img :src="matahariLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
                     <img :src="matahariTextLogo" style=" width: 270px; display: block; margin-left: auto; margin-right: auto;" />
                 </router-link>
             </div>
 
-            <div style="margin-top: 15%;">
+            <div class="mt-12">
                 <router-link :to="'/bluesville/'" class="link-type">
-                    <img :src="bluesvilleLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img :src="bluesvilleLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
                     <p class="company-title">bluesville</p>
                 </router-link>
             </div>
 
-            <div style="margin-top: 15%;">
+            <div class="mt-12">
                 <router-link :to="'/biomagg/'" class="link-type">
-                    <img :src="biomaggLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img :src="biomaggLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
                     <p class="company-title">Biomagg</p>
                 </router-link>
             </div>
 
-            <div>
+            <div class="mt-12">
                 <router-link :to="'/fabelio/'" class="link-type">
-                    <p style="text-align: center; color: white; margin-top: 18%; font-size: 45px;">Fabelio</p>
+                    <p style="text-align: center; color: white; font-size: 45px;">Fabelio</p>
                 </router-link>
             </div>
 
+            <div class="mt-12">
+                <router-link :to="'/bobobox/'" class="link-type">
+                    <p style="text-align: center; color: white; font-size: 45px;">Bobocabin</p>
+                </router-link>
+            </div>
         </div>
     </div>
 </template>

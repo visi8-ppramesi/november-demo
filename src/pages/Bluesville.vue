@@ -9,7 +9,7 @@
         </div>
 
         <div>
-            <div class="text-brush brush-height">
+            <div class="text-brush brush-height mt-12">
                 <!-- <div style="color: white; width: 70%; text-align: center; padding-top: 20%; padding-left: 12%; font-size: 25px;">
                     <strong style="color: #2F5BF8;">Bluesville</strong> is a menswear brand with a focus on preservation of traditional processes and Indonesian culture that applied to the modern 
                     and relevant men’s clothing
@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <div style="display: flex; margin-top: 10%; justify-content: end; margin-right: 5%;">
+                <div style="display: flex; margin-top: 10%; justify-content: flex-end; margin-right: 5%;">
                     <div style="background-color: #819FB5; border-radius: 10px; margin-left: 5%;">
                         <p style="color: white; font-weight: 700; padding: 5%; text-align: center;" class="text-xl">Respati Hafidz Budi (Direz)</p>
                     </div>
@@ -47,23 +47,23 @@
             <div class="px-4 mb-12">
                 <p class="text-2xl font-bold" style="color: white; text-align: center;">Our Products</p>
                 <div style="display: grid; grid-template-columns: auto auto;">
-                    <router-link to="/scene/company/bluesville/model/product2">
+                    <router-link to="/scene/company/bluesville/model/product2" class="bluesville-link">
                         <img class="slider-image" :src="product2" />
                     </router-link>
-                    <router-link to="/scene/company/bluesville/model/product3">
+                    <router-link to="/scene/company/bluesville/model/product3" class="bluesville-link">
                         <img class="slider-image" :src="product3" />
                     </router-link>
-                    <router-link to="/scene/company/bluesville/model/product4">
+                    <router-link to="/scene/company/bluesville/model/product4" class="bluesville-link">
                         <img class="slider-image" :src="product4" />
                     </router-link>
-                    <router-link to="/scene/company/bluesville/model/product5">
+                    <router-link to="/scene/company/bluesville/model/product5" class="bluesville-link">
                         <img class="slider-image" :src="product5" />
                     </router-link>
                 </div>
             </div>
 
             <div class="px-4">
-                <p class="font-bold" style="text-align: center; color: white;">
+                <p class="font-bold pb-6" style="text-align: center; color: white;">
                     Founded: 2015
                     <br /><br />
                     DSI Participation: 2021<br />
@@ -106,11 +106,12 @@ export default {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10%;
+        /* margin-top: 10%; */
         margin-bottom: 60px;
     }
 
     .brush-height{
+        max-width: 365px;
         min-height: 260px;
     }
 
@@ -118,5 +119,14 @@ export default {
         height: 95%;
         width: 95%;
         margin: 3%;
+    }
+
+    .bluesville-link{
+        width: calc(50vw - 16px);
+    }
+
+    .slider-image{
+        height: 100%;
+        width: 100%;
     }
 </style>

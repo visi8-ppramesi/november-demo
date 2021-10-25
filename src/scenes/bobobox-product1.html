@@ -6,11 +6,11 @@
     renderer="colorManagement: true;"
     xrweb>
     <a-assets>
-        <a-asset-item id="bluesvilleProduct4Model" src="https://visi8-november-demo.s3.ap-southeast-1.amazonaws.com/bluesville-product4.glb"></a-asset-item>
+        <a-asset-item id="boboboxProduct1Model" src="https://visi8-november-demo.s3.ap-southeast-1.amazonaws.com/bobobox-product1.glb"></a-asset-item>
     </a-assets>
     <a-camera
         id="camera"
-        position="0 2 4"
+        position="0 6 12"
         raycaster="objects: .cantap"
         cursor="fuse: false; rayOrigin: mouse;">
     </a-camera>
@@ -21,19 +21,19 @@
             shadowMapHeight:2048;
             shadowMapWidth:2048;
             shadowCameraTop: 10;
-            target: #bluesvilleProduct4;"
-        xrextras-attach="target: bluesvilleProduct4; offset: 3 15 3;"
+            target: #boboboxProduct1;"
+        xrextras-attach="target: boboboxProduct1; offset: 3 15 3;"
         shadow>
     </a-entity>
     <a-light type="ambient" intensity="0.65"></a-light>
     <a-entity
-        id="bluesvilleProduct4"
-        gltf-model="#bluesvilleProduct4Model"
+        id="boboboxProduct1"
+        gltf-model="#boboboxProduct1Model"
         xrextras-hold-drag
         xrextras-two-finger-rotate
         xrextras-pinch-scale
         scale="1 1 1"
-        position="0 1 0"
+        position="0 0 0"
         shadow="cast: true; receive: false;">
     </a-entity>
     <a-entity
