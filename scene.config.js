@@ -68,6 +68,11 @@ exports.config = {
                     name: 'product5',
                     entityScale: [2, 2, 2],
                     cameraPosition: [0, 3, 3],
+                },
+                {
+                    name: 'product6',
+                    entityScale: [2, 2, 2],
+                    cameraPosition: [0, 3, 3],
                 }
             ]
         },
