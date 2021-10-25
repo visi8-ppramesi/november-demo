@@ -49,14 +49,15 @@
             </div>
 
             <div class="mt-12">
-                <router-link :to="'/fabelio/'" class="link-type">
-                    <p style="text-align: center; color: white; font-size: 45px;">Fabelio</p>
+                <router-link :to="'/bobobox/'" class="link-type">
+                    <img :src="boboboxLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
                 </router-link>
             </div>
 
             <div class="mt-12">
-                <router-link :to="'/bobobox/'" class="link-type">
-                    <p style="text-align: center; color: white; font-size: 45px;">Bobocabin</p>
+                <router-link :to="'/fabelio/'" class="link-type">
+                    <!-- <img :src="fabelioLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" /> -->
+                    <p style="text-align: center; color: white; font-size: 45px;">Fabelio</p>
                 </router-link>
             </div>
         </div>
@@ -73,7 +74,9 @@ export default {
             matahariLogo: require('../assets/images/matahari/logo.png'),
             matahariTextLogo: require('../assets/images/matahari/text_logo.png'),
             bluesvilleLogo: require('../assets/images/bluesville/logo.png'),
-            biomaggLogo: require('../assets/images/biomagg/logo.png')
+            biomaggLogo: require('../assets/images/biomagg/logo.png'),
+            boboboxLogo: require('../assets/images/bobobox/logo.png'),
+            fabelioLogo: require('../assets/images/fabelio/logo.png'),
         }
     },
     created(){

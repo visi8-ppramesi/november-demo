@@ -17,10 +17,10 @@
                         <div class="pl-3 pr-3 pt-3 pb-3">
                             <router-link to="/scene/company/fabelio/model/product1">
                                 <img style="width: 85px;" :src="product1" />
+                                <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
+                                    View AR
+                                </button>
                             </router-link>
-                            <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
-                                View AR
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -29,10 +29,10 @@
                         <div class="pl-3 pr-3 pt-3 pb-3">
                             <router-link to="/scene/company/fabelio/model/product2">
                                 <img style="width: 85px;" :src="product2" />
+                                <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
+                                    View AR
+                                </button>
                             </router-link>
-                            <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
-                                View AR
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -41,10 +41,10 @@
                         <div class="pl-3 pr-3 pt-3 pb-3">
                             <router-link to="/scene/company/fabelio/model/product3">
                                 <img style="width: 85px;" :src="product3" />
+                                <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
+                                    View AR
+                                </button>
                             </router-link>
-                            <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
-                                View AR
-                            </button>
                         </div>
                     </div>
                 </div>
