@@ -67,16 +67,31 @@
                 <div class="bg-white p-2 scroller-container mr-1">
                     <router-link to="/scene/company/senormal/model/product2">
                         <img :src="product2" />
+                        <div class="flex items-center justify-center">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
-                <div class="scroller-container mr-1">
+                <div class="p-2 scroller-container mr-1">
                     <router-link to="/scene/company/senormal/model/product3">
                         <img :src="product3" />
+                        <div class="flex items-center justify-center">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
-                <div class="scroller-container mr-1">
+                <div class="p-2 scroller-container mr-1">
                     <router-link to="/scene/company/senormal/model/product4">
                         <img :src="product4" />
+                        <div class="flex items-center justify-center">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
             </div>
@@ -201,7 +216,7 @@ export default {
     }
     .scroller-container img{    
         width: 100%;
-        height: 100%;
+        height: 75%;
         -o-object-fit: cover;
         object-fit: cover;
         border-radius: 10px;

@@ -9,7 +9,7 @@
         </div>
 
         <div>
-            <div class="text-brush brush-height mt-12">
+            <div class="mt-4 text-brush brush-height">
                 <!-- <div style="color: white; width: 70%; text-align: center; padding-top: 20%; padding-left: 12%; font-size: 25px;">
                     <strong style="color: #2F5BF8;">Bluesville</strong> is a menswear brand with a focus on preservation of traditional processes and Indonesian culture that applied to the modern 
                     and relevant men’s clothing
@@ -23,48 +23,68 @@
 
             <div class="px-4 mb-12">
                 <div style="display: flex; justify-content: start;">
-                    <img :src="founder2" style="border-radius: 50%; height: 5rem; width: 5rem; display: block; margin-left: 5%;" />
-                    <div style="background-color: #819FB5; border-radius: 10px; margin-left: 5%;" class="ml-2">
-                        <p style="color: white; font-weight: 700; padding: 5%; text-align: center;" class="text-xl">Respati Hafidz Budi (Direz)</p>
+                    <img class="ml-4" :src="founder2" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
+                    <div class="ml-4" style="background-color: #819FB5; border-radius: 10px;">
+                        <p style="color: white; font-weight: 700; text-align: center;" class="p-5 text-xl">Respati Hafidz Budi (Direz)</p>
                     </div>
                 </div>
 
-                <div style="display: flex; margin-top: 10%; justify-content: flex-end; margin-right: 5%;">
-                    <div style="background-color: #819FB5; border-radius: 10px; margin-left: 5%;">
-                        <p style="color: white; font-weight: 700; padding: 5%; text-align: center;" class="text-xl">Respati Hafidz Budi (Direz)</p>
+                <div class="mr-4 mt-8" style="display: flex; justify-content: end;">
+                    <div class="ml-4" style="background-color: #819FB5; border-radius: 10px;">
+                        <p style="color: white; font-weight: 700; text-align: center;" class="p-5 text-xl">Respati Hafidz Budi (Direz)</p>
                     </div>
-                    <img :src="founder3" style="border-radius: 50%; height: 5rem; width: 5rem; display: block; margin-left: 5%;"  class="ml-2"/>
+                    <img :src="founder3" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" class="ml-4"/>
                 </div>
 
-                <div style="display: flex; margin-top: 10%; justify-content: start;">
-                    <img :src="founder4" style="border-radius: 50%; height: 5rem; width: 5rem; display: block; margin-left: 5%;" />
-                    <div style="background-color: #819FB5; border-radius: 10px; margin-left: 5%;" class="ml-2">
-                        <p style="color: white; font-weight: 700; padding: 5%; text-align: center;" class="text-xl">Arundana Pratamasunu (Dana)</p>
+                <div class="mt-8" style="display: flex; justify-content: start;">
+                    <img class="ml-4" :src="founder4" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
+                    <div class="ml-4" style="background-color: #819FB5; border-radius: 10px;">
+                        <p style="color: white; font-weight: 700; text-align: center;" class="p-5 text-xl">Arundana Pratamasunu (Dana)</p>
                     </div>
                 </div>
             </div>
 
             <div class="px-4 mb-12">
                 <p class="text-2xl font-bold" style="color: white; text-align: center;">Our Products</p>
-                <div style="display: grid; grid-template-columns: auto auto;">
-                    <router-link to="/scene/company/bluesville/model/product2" class="bluesville-link">
-                        <img class="slider-image" :src="product2" />
+                <div class="pt-3" style="display: grid; grid-template-columns: auto auto;">
+                    <router-link to="/scene/company/bluesville/model/product2">
+                        <img class="pr-3 slider-image" :src="product2" />
+                        <div class="flex bg-white mr-3 rounded-bl rounded-br border-t-2 items-center justify-center">
+                            <button class="my-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
-                    <router-link to="/scene/company/bluesville/model/product3" class="bluesville-link">
+                    <router-link to="/scene/company/bluesville/model/product3">
                         <img class="slider-image" :src="product3" />
+                        <div class="flex bg-white rounded-bl rounded-br border-t-2 items-center justify-center">
+                            <button class="my-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
-                    <router-link to="/scene/company/bluesville/model/product4" class="bluesville-link">
-                        <img class="slider-image" :src="product4" />
+                    <router-link to="/scene/company/bluesville/model/product4">
+                        <img class="pr-3 pt-3 slider-image" :src="product4" />
+                        <div class="flex bg-white mr-3 rounded-bl rounded-br border-t-2 items-center justify-center">
+                            <button class="my-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
-                    <router-link to="/scene/company/bluesville/model/product5" class="bluesville-link">
-                        <img class="slider-image" :src="product5" />
+                    <router-link to="/scene/company/bluesville/model/product5">
+                        <img class="pt-3 slider-image" :src="product5" />
+                        <div class="flex bg-white rounded-bl rounded-br border-t-2 items-center justify-center">
+                            <button class="my-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
             </div>
 
-            <div class="px-4">
-                <p class="font-bold pb-6" style="text-align: center; color: white;">
-                    Founded: 2015
+            <div class="px-4 pb-5 mt-10">
+                <p class="font-bold" style="text-align: center; color: white;">
+                    Founded: 2017
                     <br /><br />
                     DSI Participation: 2021<br />
                     DSI Investment: IDR 1 Bn (IDR 810 Mio Equity – IDR 190 Mio SH loan)<br />
@@ -106,27 +126,15 @@ export default {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        /* margin-top: 10%; */
         margin-bottom: 60px;
     }
 
     .brush-height{
-        max-width: 365px;
         min-height: 260px;
     }
 
-    .product {
-        height: 95%;
-        width: 95%;
-        margin: 3%;
-    }
-
-    .bluesville-link{
-        width: calc(50vw - 16px);
-    }
-
-    .slider-image{
-        height: 100%;
+    .slider-image {
+        height: 75%;
         width: 100%;
     }
 </style>

@@ -9,7 +9,7 @@
         </div>
 
         <div class="mb-12">
-            <p style="text-align: left; margin: 5%; padding-right: 35%; color: white;">
+            <p class="m-4 pr-28" style="text-align: left; color: white;">
                 <strong class="text-xl">What is Biomagg ?</strong>
                 <br /><br />
                 <strong style="color: #46E96A;">BIOMAGG</strong> is a start-up that focuses on processing organic waste, especially food waste, using bioconversion technology 
@@ -22,34 +22,64 @@
         <div class="mb-12">
             <p class="text-2xl font-bold mb-4" style="color: white; text-align: center;">Our Products</p>
             <div class="scrolling-wrapper px-1">
-                <div class="bg-white p-2 scroller-container mr-1">
+                <div class="scroller-container mr-1">
                     <router-link to="/scene/company/biomagg/model/product1">
-                        <img :src="product1" />
+                        <img class="pt-5" :src="product1" />
+                        <div class="flex items-center justify-center pt-2">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
-                <div class="bg-white p-2 scroller-container mr-1">
+                <div class="scroller-container mr-1">
                     <router-link to="/scene/company/biomagg/model/product2">
-                        <img :src="product2" />
+                        <img class="pt-5" :src="product2" />
+                        <div class="flex items-center justify-center pt-2">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
                 <div class="scroller-container mr-1">
                     <router-link to="/scene/company/biomagg/model/product3">
-                        <img :src="product3" />
+                        <img class="pt-5" :src="product3" />
+                        <div class="flex items-center justify-center pt-2">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
                 <div class="scroller-container mr-1">
                     <router-link to="/scene/company/biomagg/model/product4">
-                        <img :src="product4" />
+                        <img class="pt-5" :src="product4" />
+                        <div class="flex items-center justify-center pt-2">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
                 <div class="scroller-container mr-1">
                     <router-link to="/scene/company/biomagg/model/product5">
-                        <img :src="product5" />
+                        <img class="pt-5" :src="product5" />
+                        <div class="flex items-center justify-center pt-2">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
                 <div class="scroller-container mr-1">
                     <router-link to="/scene/company/biomagg/model/product6">
-                        <img :src="product6" />
+                        <img class="pt-5" :src="product6" />
+                        <div class="flex items-center justify-center pt-2">
+                            <button class="mt-3 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                View AR
+                            </button>
+                        </div>
                     </router-link>
                 </div>
             </div>
@@ -59,12 +89,12 @@
             <p style="color: white; text-align: center;" class="text-2xl font-bold mb-4">Founder of Biomagg</p>
             <img :src="founder1" style="border-radius: 50%; height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
             <p style="color: white; text-align: center;" class="mb-12 mt-4">Aminudi <br />Founder and CEO</p>
-            <img :src="founder2" style="border-radius: 50%; height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width="250px;" />
+            <img :src="founder2" class="mt-4" style="border-radius: 50%; height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
             <p style="color: white; text-align: center;" class="mb-12 mt-4">Pandudamai Insani Taufiq <br /> Founder and COO</p>
         </div>
 
-        <div style="background-color: #63D161; margin: 10%; border-radius: 5%;">
-            <p style="color: white; text-align: center; padding: 10%;">
+        <div class="rounded-xl mx-8" style="background-color: #63D161;">
+            <p class="p-4" style="color: white; text-align: center;">
                 <strong>Future Collaboration Project : </strong>
                 <br /> <br />
                 One of DSI’s subsidiary, IIB (Ideanation) will collaborate with Biomagg to establish a workshop in Anyer (Banten)
@@ -113,6 +143,7 @@ export default {
     }
     .product-container{
         width: 300px;
+        height: 100%;
         display: table;
     }
     .scrolling-wrapper{
@@ -120,7 +151,6 @@ export default {
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        padding-top: 5px;
     }
     .scrolling-wrapper.card{
         flex: 0 0 auto;
@@ -130,17 +160,17 @@ export default {
     }
     .scroller-container img{    
         width: 100%;
-        height: 100%;
+        height: 85%;
         -o-object-fit: none;
         object-fit: none;
         border-radius: 10px;
     }
     .scroller-container{
         /* max-height: 334px; */
-        min-width: 150px;
+        min-width: 250px;
         /* height: 205px; */
         border-radius: 10px;
-        max-height: 400px;
+        max-height: 450px;
         background-color: white;
     }
     .scroller-block{
