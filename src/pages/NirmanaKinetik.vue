@@ -1,7 +1,7 @@
 <template>
     <div style="background-color: #363C35;" class="pb-4">
-        <div>
-            <p style="font-family: Ribeye Marrow; color: white; text-align: center; font-size: 50px;">Nirmana Kinetik</p>
+         <div class="flex items-center justify-center">
+            <img class="w-60" :src="nirmanaLogo" />
         </div>
 
         <div class="px-4">
@@ -27,6 +27,7 @@ export default {
             iframeSrc1: 'https://www.youtube.com/embed/uxA2vZ9xJlc',
             iframeSrc2: 'https://www.youtube.com/embed/fFTHKrunpLk',
             iframeSrc3: 'https://www.youtube.com/embed/GTE6iddOm4o',
+            nirmanaLogo: require('../assets/images/nirmana_kinetik/logo-white.png'),
         }
     },
 }

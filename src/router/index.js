@@ -56,7 +56,42 @@ let routeBuilder = (name) => {
     }
 }
 
-let builtRoute = ['bellsSociety', 'matahari', 'biomagg', 'bluesville', 'fabelio', 'nirmanaKinetik', 'senormal', 'bobobox'].map(el => routeBuilder(el))
+let panoramaRouteBuilder = (acc, name) => {
+    if(Object.keys(acc).length > 0){
+        acc.children.push({
+            path: name.toLowerCase(),
+            component: () => import('../pages/panorama/' + capitalCaseFormatter(name)),
+            name: capitalCaseFormatter(name),
+            meta: { title: titleCaseFormatter(name), noCache: false }
+        })
+    }else{
+        acc.path = '/panorama'
+        acc.component = Layout
+        acc.redirect = '/panorama/exterior'
+        acc.children = [
+            {
+                path: name.toLowerCase(),
+                component: () => import('../pages/panorama/' + capitalCaseFormatter(name)),
+                name: capitalCaseFormatter(name),
+                meta: { title: titleCaseFormatter(name), noCache: false }
+            }
+        ] 
+    }
+    return acc
+}
+
+let builtRoutes = ['bellsSociety', 'matahari', 'biomagg', 'bluesville', 'fabelio', 'nirmanaKinetik', 'senormal', 'bobobox'].map(el => routeBuilder(el))
+let panoramaRoutes = [
+    'exterior',
+    'externalBathroom',
+    'bathroom',
+    'bigRoom', 
+    'bigBed', 
+    'bigBathroom', 
+    'smallRoom', 
+    'smallBed', 
+    'frontOffice'
+].reduce(panoramaRouteBuilder, {})
 
 export const routes = [
     {
@@ -72,7 +107,8 @@ export const routes = [
             },
         ],
     },
-    ...builtRoute,
+    ...builtRoutes,
+    panoramaRoutes,
     {
         path: '/scene',
         component: Layout,

@@ -65,15 +65,15 @@
             </div>
         </div>
 
-        <!-- <hr />
+        <div class="px-4">
+            <hr style="color:white"/>
+        </div>
 
-        <div>
-            <p class="text-2xl font-bold" style="color: white; text-align: center;">Our Youtube Channel</p>
-            <iframe style="display: block; margin: 0 auto; margin-top: 70px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="900" height="443" type="text/html" src="https://www.youtube.com/embed/m86cRO0XtOA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><a href="https://youtubeembedcode.com/de/"></a></div></iframe>
-            <div>
-                <a style="font-size: 30px; border-radius: 10px; padding: 20px; position: absolute; left: 30%; margin-top: 5%;" href="https://www.youtube.com/c/SembilanMatahariChannel/videos">Go To Our Youtube Channel</a>
-            </div>
-        </div> -->
+        <div class="pb-4">
+            <p class="text-2xl font-bold my-4 text-white text-center">Our Founder</p>
+            <img :src="founder1" style="height: 100px; width: 150px; display: block; margin-left: auto; margin-right: auto;"/>
+            <p style="color: white; text-align: center;" class="mb-12 mt-4"><strong>Adi Panuntun</strong> <br />Founder 9 Matahari</p>
+        </div>
     </div>
 </template>
 
@@ -94,6 +94,7 @@ export default {
             iframeSrc2: 'https://www.youtube.com/embed/CKxacX0J-s4',
             iframeSrc3: 'https://www.youtube.com/embed/_Wtuu-8juq4',
             iframeSrc4: 'https://www.youtube.com/embed/nctjD-eg0CQ',
+            founder1: require('../assets/images/matahari/founder.png'),
         }
     }
 }

@@ -1,50 +1,52 @@
 <template>
     <div style="background-color: #203950; ">
         <div>
-            <img :src="logo" class="py-8" style=" max-width: 200px; margin-left: auto; margin-right: auto;" />
+            <img :src="logo" class="py-5" style=" max-width: 200px; margin-left: auto; margin-right: auto;" />
         </div>
 
-        <div class="px-4">
+        <div class="px-4 pb-4">
             <hr style="color:white"/>
         </div>
 
         <div>
-            <div class="mt-4 text-brush brush-height">
-                <!-- <div style="color: white; width: 70%; text-align: center; padding-top: 20%; padding-left: 12%; font-size: 25px;">
-                    <strong style="color: #2F5BF8;">Bluesville</strong> is a menswear brand with a focus on preservation of traditional processes and Indonesian culture that applied to the modern 
-                    and relevant men’s clothing
-                </div> -->
-                <div class="flex brush-height">
-                    <div class="m-auto px-16" style="color:white;">
+            <div class="px-4">
+                <div class="mt-4 rounded border border-white" style="background-color: #203950;">
+                    <div class="m-auto px-5 py-5 text-md" style="color:white;">
                         <strong style="color: #2F5BF8;">Bluesville</strong> is a menswear brand with a focus on preservation of traditional processes and Indonesian culture that applied to the modern and relevant men’s clothing
+                        <br /> <br />
+                        <strong style="color: #2F5BF8;">Bluesville</strong> continues the tradition of respecting color by extracting it directly from nature. Creating a unique character of color that cannot be replicated by man made dye.
+                        <br /> <br />
+                        We make natural dye accessible to everybody by making it in more suitable and practical form for everyday wear
                     </div>
                 </div>
             </div>
 
             <div class="px-4 mb-12">
-                <div style="display: flex; justify-content: start;">
-                    <img class="ml-4" :src="founder2" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
-                    <div class="ml-4" style="background-color: #819FB5; border-radius: 10px;">
-                        <p style="color: white; font-weight: 700; text-align: center;" class="p-5 text-xl">Respati Hafidz Budi (Direz)</p>
+                <p class="text-center font-bold text-xl text-white py-4">Our Founder</p>
+                <div class="mt-8" style="display: flex; justify-content: start;">
+                    <img class="ml-4 mr-3" :src="founder4" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
+                    <div class="ml-4 mt-5 h-7 px-3" style="background-color: #819FB5; border-radius: 50px;">
+                        <p style="color: white; font-weight: 700; text-align: center;" class="text-md">Arundana Pratamasunu</p>
                     </div>
                 </div>
 
-                <div class="mr-4 mt-8" style="display: flex; justify-content: end;">
-                    <div class="ml-4" style="background-color: #819FB5; border-radius: 10px;">
-                        <p style="color: white; font-weight: 700; text-align: center;" class="p-5 text-xl">Respati Hafidz Budi (Direz)</p>
+                <div class="flex mt-8">
+                    <img class="ml-4 mr-3" :src="founder2" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;"/>
+                    <div class="ml-4 mt-5 h-7 px-3" style="background-color: #819FB5; border-radius: 50px;">
+                        <p style="color: white; font-weight: 700; text-align: center;" class="text-md">Respati Hafidz Budi</p>
                     </div>
-                    <img :src="founder3" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" class="ml-4"/>
                 </div>
 
                 <div class="mt-8" style="display: flex; justify-content: start;">
-                    <img class="ml-4" :src="founder4" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
-                    <div class="ml-4" style="background-color: #819FB5; border-radius: 10px;">
-                        <p style="color: white; font-weight: 700; text-align: center;" class="p-5 text-xl">Arundana Pratamasunu (Dana)</p>
+                    <img class="ml-4 mr-3" :src="founder3" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
+                    <div class="ml-4 mt-5 h-7 px-3" style="background-color: #819FB5; border-radius: 50px;">
+                        <p style="color: white; font-weight: 700; text-align: center;" class="text-md">Osi Suheili</p>
                     </div>
                 </div>
+                
             </div>
 
-            <div class="px-4 mb-12">
+            <div class="px-4">
                 <p class="text-2xl font-bold" style="color: white; text-align: center;">Our Products</p>
                 <div class="pt-3" style="display: grid; grid-template-columns: auto auto;">
                     <router-link to="/scene/company/bluesville/model/product2">
@@ -81,20 +83,6 @@
                     </router-link>
                 </div>
             </div>
-
-            <div class="px-4 pb-5 mt-10">
-                <p class="font-bold" style="text-align: center; color: white;">
-                    Founded: 2017
-                    <br /><br />
-                    DSI Participation: 2021<br />
-                    DSI Investment: IDR 1 Bn (IDR 810 Mio Equity – IDR 190 Mio SH loan)<br />
-                    DSI ownership: 16.5%<br />
-                    Post-money Valuation: IDR 4.9 Bn<br />
-                    On-going Project in collaboration with DSI<br />
-                    Indigofera Nursery and Plantation in Anyer<br />
-                    Natural Dying workshop and experiential destination in Anyer<br />
-                </p>
-            </div>
         </div>
     </div>
 </template>
@@ -118,20 +106,6 @@ export default {
 </script>
 
 <style scoped>
-    .text-brush {
-        background-image: url('../assets/images/bluesville/brush.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
-    }
-
-    .brush-height{
-        min-height: 260px;
-    }
 
     .slider-image {
         height: 75%;

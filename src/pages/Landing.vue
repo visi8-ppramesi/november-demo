@@ -23,7 +23,7 @@
 
             <div class="mt-12">
                 <router-link :to="'/nirmana-kinetik/'" class="link-type">
-                    <p style="font-family: Ribeye Marrow; text-align: center; color: white; font-size: 45px;">Nirmana Kinetik</p>
+                    <img :src="nirmanaLogo" style=" width: 350px; display: block; margin-left: auto; margin-right: auto;" />
                 </router-link>
             </div>
 
@@ -77,6 +77,7 @@ export default {
             biomaggLogo: require('../assets/images/biomagg/logo.png'),
             boboboxLogo: require('../assets/images/bobobox/logo.png'),
             fabelioLogo: require('../assets/images/fabelio/logo.png'),
+            nirmanaLogo: require('../assets/images/nirmana_kinetik/logo-white.png'),
         }
     },
     created(){

@@ -17,12 +17,16 @@ export default {
             return this.$route.fullPath;
         },
     },
-    created(){
-        console.log(this.$route)
-    },
     methods: {
         goBack(){
-            this.$router.go(-1)
+            if(this.key.includes('panorama')){
+                let goBack = parseInt(localStorage.getItem("panoramaDepth")) * -1
+                console.log(goBack)
+                this.$router.go(goBack)
+                localStorage.removeItem('panoramaDepth')
+            }else{
+                this.$router.go(-1)
+            }
         }
     }
 }
@@ -30,7 +34,7 @@ export default {
 
 <style scoped>
     .go-back-container{
-        bottom: 0;
+        top: calc(var(--viewport-height) - 84px);
         margin: 10px;
         z-index: 9999;
     }

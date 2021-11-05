@@ -31,7 +31,7 @@
         <div class="founder text-white">
             <div style="background-color: #176E9F;" class="mt-5 rounded-tr-md rounded-br-md w-60 sm:w-80">
                 <div class="p-3">
-                    <p class="ml-3">Karang Adjie</p>
+                    <p class="ml-3">Karaeng Adjie</p>
                     <div class="mt-3 flex items-center justify-center">
                         <img class="w-24" :src="founder1" />
                         <p class="text-center text-sm ml-3 w-24">CO-founder Chief Executive Officer</p>
@@ -51,7 +51,7 @@
 
             <div style="background-color: #176E9F;" class="mt-5 rounded-tr-md rounded-br-md w-60 sm:w-80">
                 <div class="p-3">
-                    <p class="ml-3">Xandega tahanjuansya</p>
+                    <p class="ml-3">Xandega Tahajuansya</p>
                     <div class="mt-3 flex items-center justify-center">
                         <img class="w-24" :src="founder3" />
                         <p class="text-center text-sm ml-3 w-24">CO-founder Marketing and CX</p>
@@ -135,10 +135,10 @@
                             <div class="bg-red-200 w-6 h-6 rounded-full">
                                 <p class="text-center">3</p>
                             </div>
-                            <div class="ml-3 font-bold text-m">Responsible</div>
+                            <div class="ml-3 font-bold text-m">Easy and Compact</div>
                         </div>
                         <section class="text-xs ml-9 mt-2">
-                            Cut down single plastic usage with our refillable tablets
+                            No more spills, no emergency run to the store and more space
                         </section>
                     </div>
                 </div>
@@ -148,11 +148,10 @@
                             <div class="bg-green-200 w-6 h-6 rounded-full">
                                 <p class="text-center">4</p>
                             </div>
-                            <div class="ml-3 font-bold text-m">Cost Efficient</div>
+                            <div class="ml-3 font-bold text-m">Responsible</div>
                         </div>
                         <section class="text-xs ml-9 mt-2">
-                            By not having to re-buy plastic
-                            bottles and water.
+                            Cut down single plastic usage with out refillable tablets
                         </section>
                     </div>
                 </div>

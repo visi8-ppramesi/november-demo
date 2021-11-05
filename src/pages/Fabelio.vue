@@ -4,7 +4,7 @@
             <div class="flex items-center justify-center">
                 <img :src=logo />
             </div>
-            <p class="text-center">Fabelio</p>
+            <p class="pb-2 text-center">Fabelio</p>
         </div>
 
         <hr class="ml-5 mr-5" style="border-color: black;" />
@@ -13,11 +13,11 @@
             <p class="pl-5 pt-5 text-xl font-bold">Our Products :</p>
             <div class="grid grid-cols-3 sm:grid-cols-4">
                 <div class="px-5 mt-3">
-                    <div class="bg-gray-200 w-max rounded-lg">
+                    <div class="border border-black bg-white w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
                             <router-link to="/scene/company/fabelio/model/product1">
                                 <img style="width: 85px;" :src="product1" />
-                                <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
+                                <button class="font-bold mt-3 ml-3 w-16 text-xs bg-yellow-300 hover:bg-blue-700 border border-black rounded">
                                     View AR
                                 </button>
                             </router-link>
@@ -25,11 +25,11 @@
                     </div>
                 </div>
                 <div class="px-3 mt-3">
-                    <div class="bg-gray-200 w-max rounded-lg">
+                    <div class="border border-black bg-white w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
                             <router-link to="/scene/company/fabelio/model/product2">
                                 <img style="width: 85px;" :src="product2" />
-                                <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
+                                <button class="font-bold mt-3 ml-3 w-16 text-xs bg-yellow-300 hover:bg-blue-700 border border-black rounded">
                                     View AR
                                 </button>
                             </router-link>
@@ -37,11 +37,11 @@
                     </div>
                 </div>
                 <div class="px-1 mt-3">
-                    <div class="bg-gray-200 w-max rounded-lg">
+                    <div class="border border-black bg-white w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
                             <router-link to="/scene/company/fabelio/model/product3">
                                 <img style="width: 85px;" :src="product3" />
-                                <button class="mt-3 ml-3 w-16 text-xs bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded">
+                                <button class="font-bold mt-3 ml-3 w-16 text-xs bg-yellow-300 hover:bg-blue-700 border border-black rounded">
                                     View AR
                                 </button>
                             </router-link>
@@ -113,7 +113,7 @@
             </div>
             <div>
                 <section>
-                    <p class="p-5">
+                    <p class="py-5 mx-4 text-xs text-justify">
                         <strong class="text-2xl">Tentang Kami</strong>
                         <br />
                         <strong class="ml-1">Perkenalkan, kami adalah Fabelio</strong>
@@ -132,6 +132,20 @@
                     </p>
                 </section>
             </div>
+
+            <div class="pb-4">
+                <p class="text-xl font-bold my-4 px-5 text-center">Our Founder</p>
+                <div class="flex items-center justify-center">
+                    <div class="pl-5">
+                        <img :src="founder1"/>
+                        <p class=" text-center mb-12 mt-4"><strong>Christian Sutardi</strong> <br />Co-Founder</p>
+                    </div>
+                    <div class="pr-5">
+                        <img class="pt-3" :src="founder2"/>
+                        <p class="pt-2 text-center mb-12 mt-4"><strong>Marshall Utoyo</strong> <br />Co-Founder</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -147,6 +161,8 @@ export default {
           product3: require('../assets/images/fabelio/product3.png'),
           product4: require('../assets/images/fabelio/product4.png'),
           product5: require('../assets/images/fabelio/product5.png'),
+          founder1: require('../assets/images/fabelio/founder1.png'),
+          founder2: require('../assets/images/fabelio/founder2.png'),
       }
     }
 }

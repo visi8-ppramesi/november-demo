@@ -1,7 +1,7 @@
 <template>
     <div style="background-color: #1C1A1A;">
-        <div class="px-4 py-6 flex content-center items-center justify-center align-center">
-            <img :src="logo" style="width: 33vw; max-width:150px" />
+        <div class="px-4 flex content-center items-center justify-center align-center">
+            <img :src="logo" class="pt-4" style="width: 33vw; max-width:150px" />
             <div class="flex flex-col pl-2">
                 <div class="text-3xl mb-4">
                     <span style="color:white">Bells</span> <strong style="color: #5C4040;">Society</strong> 
@@ -30,9 +30,9 @@
 
         <div class="px-4">
             <p style="color: white; text-align: center" class="text-3xl font-bold mb-4">Our Team</p>
-            <img :src="founder1" style="object-fit:cover; border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
+            <img :src="founder1" style="object-fit:cover; border-radius: 50%; height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto;" width="250px;" />
             <p style="color: white; text-align: center;" class="my-8">Arka Irfani <br />CEO/CTO and Founder</p>
-            <img :src="founder2" style="object-fit:cover; border-radius: 50%; height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width="250px;" />
+            <img :src="founder2" style="object-fit:cover; border-radius: 50%; height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width="250px;" />
             <p style="color: white; text-align: center;" class="my-8">Semeru Gita L <br /> COO and Founder</p>
         </div>
 
@@ -79,22 +79,15 @@
             </div>
         </div>
 
-        <div style="display: flex;" class="px-4 py-6">
-            <p style="color: white;" class="mr-2">One of DSI’s subsidiary, IIB (Ideanation) acquired 26% shares of Bell Society with the value of IDR 500 mio</p>
-            <div class="bottom-image">
-                <img style="" :src="pic" />
-            </div>
-        </div>
-
-        <div style="display: flex;" class="px-4 py-6">
+        <div style="display: flex;" class="px-4 py-10">
             <div class="bottom-image">
                 <img :src="pic" />
             </div>
             <p class="ml-2" style="color: white; text-align: right; width: 400px;">Currently Bell Society owned one workshop in Bandung with production capacity of 100m2/month. Expected to be expanded to 300m2/month by using the investment proceed</p>
         </div>
 
-        <div style="background-color: black; padding: 10%; border-radius: 5%;">
-            <p style="color: white; text-align: center; padding: 10%;">
+        <div class="mt-6" style="background-color: black; padding: 10%; border-top-left-radius: 10%; border-top-right-radius: 10%;">
+            <p style="color: white; text-align: center; padding: 3%;">
                 <strong>Future Project :</strong>
                 <br /> <br />
                 Collaborate with PT. Mitrabara Adiperdana Tbk, for one of their post mining project. 
@@ -118,7 +111,6 @@ export default {
             product2: require('../assets/images/bells_society/product2.png'),
             product3: require('../assets/images/bells_society/product3.png'),
             pic: require('../assets/images/bells_society/pic.jpg'),
-
         }
     }
 }
@@ -167,7 +159,6 @@ export default {
         max-height: 400px;
         background-color: white;
     }
-
     .image{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;

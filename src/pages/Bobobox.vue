@@ -16,7 +16,7 @@
 
         <div>
             <div class="px-5 pb-2">
-                <img :src="bobo1" />
+                <img class="shadow-xl" :src="bobo1" />
             </div>
             <div class="scrolling-wrapper pb-5">
                 <div class="bg-white scroller-container mr-1">
@@ -35,7 +35,7 @@
                     <img :src="bobo8" />
                 </div>
                 <div class="scroller-container mr-1">
-                    <img cl :src="bobo10" />
+                    <img :src="bobo10" />
                 </div>
             </div>
         </div>
@@ -44,14 +44,33 @@
             <div class="text-center text-xl font-bold text-white">Experience with Our AR Feature</div>
             <img class="pt-3" :src="bobo9" />
             <div>
-            <div class="flex items-center justify-center py-3">
-                <router-link to="/scene/company/bobobox/model/product1" class="bobobox-link">
-                    <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
-                        View With AR
-                    </button>
-                </router-link>
+                <div class="flex items-center justify-center py-3">
+                    <router-link to="/scene/company/bobobox/model/product1" class="bobobox-link">
+                        <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
+                            View With AR
+                        </button>
+                    </router-link>
+                </div>
+                <div class="flex items-center justify-center py-3">
+                    <router-link to="/panorama/" class="bobobox-link">
+                        <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
+                            View 360
+                        </button>
+                    </router-link>
+                </div>
             </div>
         </div>
+
+        <div class="px-4 pb-5">
+            <p style="color: white; text-align: center" class="text-2xl font-bold mt-4">Our Team</p>
+            <div class="flex items-center justify-center mt-3 divide-x">
+                <img :src="founder1" style="object-fit:cover; height: 100px; width: 100px;" />
+                <p class="text-white my-7 mx-5 pl-5"><strong>Indra Gunawan</strong> <br />CEO</p>
+            </div>
+            <div class="flex items-center justify-center mt-3 divide-x">
+                <img :src="founder2" style="object-fit:cover; height: 100px; width: 100px;" />
+                <p class="text-white my-6 mx-5 pl-5"><strong>Antonius Bong</strong> <br /> President</p>
+            </div>
         </div>
     </div>
 </template>
@@ -72,6 +91,8 @@ export default {
           bobo8: require('../assets/images/bobobox/bobo8.jpg'),
           bobo9: require('../assets/images/bobobox/bobo9.jpg'),
           bobo10: require('../assets/images/bobobox/bobo10.jpg'),
+          founder1: require('../assets/images/bobobox/founder1.png'),
+          founder2: require('../assets/images/bobobox/founder2.png'),
       }
     }
 }
