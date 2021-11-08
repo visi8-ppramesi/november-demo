@@ -1,8 +1,8 @@
 <template>
-    <div  style="background-color: #f8f5e8; h-content">
+    <div  style="background-color: #f8f5e8" class="pt-5">
         <div>
             <div class="flex items-center justify-center">
-                <img :src=logo />
+                <img :src=logo class="w-20" />
             </div>
             <p class="pb-2 text-center">Fabelio</p>
         </div>

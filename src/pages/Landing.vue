@@ -56,7 +56,7 @@
 
             <div class="mt-12">
                 <router-link :to="'/fabelio/'" class="link-type">
-                    <!-- <img :src="fabelioLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" /> -->
+                    <img :src="fabelioLogo" style=" width: 105px; display: block; margin-left: auto; margin-right: auto;" />
                     <p style="text-align: center; color: white; font-size: 45px;">Fabelio</p>
                 </router-link>
             </div>

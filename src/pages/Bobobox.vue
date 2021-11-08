@@ -18,7 +18,7 @@
         </div>
 
         <div>
-            <div class="px-5 pb-2">
+            <div class="pb-2">
                 <img class="shadow-xl" :src="bobo1" />
             </div>
             <div class="scrolling-wrapper pb-5">
