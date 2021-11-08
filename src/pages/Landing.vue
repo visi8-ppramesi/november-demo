@@ -50,7 +50,7 @@
 
             <div class="mt-12">
                 <router-link :to="'/bobobox/'" class="link-type">
-                    <img :src="boboboxLogo" style=" width: 200px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img :src="boboboxLogo" style=" width: 180px; display: block; margin-left: auto; margin-right: auto;" />
                 </router-link>
             </div>
 
@@ -75,7 +75,7 @@ export default {
             matahariTextLogo: require('../assets/images/matahari/text_logo.png'),
             bluesvilleLogo: require('../assets/images/bluesville/logo.png'),
             biomaggLogo: require('../assets/images/biomagg/logo.png'),
-            boboboxLogo: require('../assets/images/bobobox/logo.png'),
+            boboboxLogo: require('../assets/images/bobobox/boboboxLogo.png'),
             fabelioLogo: require('../assets/images/fabelio/logo.png'),
             nirmanaLogo: require('../assets/images/nirmana_kinetik/logo-white.png'),
         }
