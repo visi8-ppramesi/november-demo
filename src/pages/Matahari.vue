@@ -25,7 +25,7 @@
             <hr style="color:white"/>
         </div>
 
-        <div class="mb-4" style="margin-top: 10%;">
+        <div class="mb-4">
             <img class="cover-img" :src="pic2" />
             <p style="color: white; text-align: center" class="mt-6 px-8">
                 Sembilan Matahari specializes in large scale projection mapping events, 

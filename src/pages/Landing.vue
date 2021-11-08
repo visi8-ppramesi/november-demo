@@ -6,7 +6,7 @@
             <hr class="my-2" />
         </div>
 
-        <div style="margin-top: 10%;">
+        <div class="mt-10">
             <div>
                 <router-link :to="'/bells-society/'" class="link-type">
                     <img :src="bellsSocietyLogo" style=" width: 100px; display: block; margin-left: auto; margin-right: auto;" />

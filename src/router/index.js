@@ -90,7 +90,8 @@ let panoramaRoutes = [
     'bigBathroom', 
     'smallRoom', 
     'smallBed', 
-    'frontOffice'
+    'frontOffice',
+    'malioboro'
 ].reduce(panoramaRouteBuilder, {})
 
 export const routes = [
@@ -120,6 +121,18 @@ export const routes = [
                 meta: { title: 'Scene Viewer', icon: 'dashboard', noCache: false },
             },
         ],
+    },
+    {
+        path: '/test1/',
+        component: () => import('../pages/testing/Testing1'),
+        name: 'Testing1Viewer',
+        meta: { title: 'Scene Viewer', icon: 'dashboard', noCache: false },
+    },
+    {
+        path: '/test2/',
+        component: () => import('../pages/testing/Testing2'),
+        name: 'Testing2Viewer',
+        meta: { title: 'Scene Viewer', icon: 'dashboard', noCache: false },
     },
 ]
 

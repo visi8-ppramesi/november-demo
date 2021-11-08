@@ -54,7 +54,14 @@
                 <div class="flex items-center justify-center py-3">
                     <router-link to="/panorama/" class="bobobox-link">
                         <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
-                            View 360
+                            View 360 Bobocabin
+                        </button>
+                    </router-link>
+                </div>
+                <div class="flex items-center justify-center py-3">
+                    <router-link to="/panorama/malioboro/" class="bobobox-link">
+                        <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
+                            View 360 Malioboro
                         </button>
                     </router-link>
                 </div>
