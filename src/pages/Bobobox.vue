@@ -4,8 +4,63 @@
             <div class="flex items-center justify-center">
                 <img class="h-28 pb-2" :src=boboLogo />
             </div>
+        </div>
+
+        <hr class="ml-5 mr-5" />
+
+        <div>
+            <p class="p-5 text-center italic text-white">
+                <strong class="text-lg">Bobobox</strong> is the first and largest tech-enabled sleeping experience eco-system in Indonesia.
+                Bobobox are sleek capsule hotels equipped with IoT-enabled features to enhance guests’ experience and safety.
+            </p>
+        </div>
+
+        <div class="flex p-5">
+            <div>
+                <img class="pb-2" :src=room1 />
+                <img class="pt-2" :src=room3 />
+            </div>
+            <div>
+                <img class="pl-3 h-full" :src=room2 />
+            </div>
+        </div>
+
+        <div class="p-5 text-white">
+            <p class="text-2xl font-bold">Bobobox Has :</p>
+            <ul class="px-5 py-2 list-disc">
+                <li>1.000 pods 14 branches</li>
+                <li>Over 80% Ave. Occupancy Rate</li>
+                <li>Over 90% Millennials and Younger</li>
+                <li>Over 70% NPS and Direct Transactions</li>
+                <li>$8 - $15 per Night</li>
+            </ul>
+        </div>
+
+        <div class="flex items-center justify-center py-3">
+            <router-link to="/panorama/malioboro/" class="bobobox-link">
+                <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
+                    View 360 Malioboro
+                </button>
+            </router-link>
+        </div>
+
+        <div class="px-4 pb-5">
+            <p style="color: white; text-align: center" class="text-2xl font-bold mt-5">Our Team</p>
+            <div class="flex items-center justify-center mt-3 divide-x">
+                <img :src="founder1" style="object-fit:cover; height: 100px; width: 100px;" />
+                <p class="text-white my-7 mx-5 pl-5"><strong>Indra Gunawan</strong> <br />CEO</p>
+            </div>
+            <div class="flex items-center justify-center mt-3 divide-x">
+                <img :src="founder2" style="object-fit:cover; height: 100px; width: 100px;" />
+                <p class="text-white my-6 mx-5 pl-5"><strong>Antonius Bong</strong> <br /> President</p>
+            </div>
+        </div>
+
+        <hr class="mt-5 border-gray border-4" />
+
+        <div>
             <div class="flex items-center justify-center">
-                <img class="h-36 pb-3" :src=logo />
+                <img class="h-36 mt-5 pb-3" :src=logo />
             </div>
         </div>
 
@@ -44,7 +99,7 @@
         </div>
 
         <div>
-            <div class="text-center text-xl font-bold text-white">Experience with Our AR Feature</div>
+            <div class="text-center text-xl font-bold text-white">Experience with Our AR/VR Feature</div>
             <img class="pt-3" :src="bobo9" />
             <div>
                 <div class="flex items-center justify-center py-3">
@@ -54,32 +109,13 @@
                         </button>
                     </router-link>
                 </div>
-                <div class="flex items-center justify-center py-3">
+                <div class="flex items-center justify-center pb-5">
                     <router-link to="/panorama/" class="bobobox-link">
                         <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
                             View 360 Bobocabin
                         </button>
                     </router-link>
                 </div>
-                <div class="flex items-center justify-center py-3">
-                    <router-link to="/panorama/malioboro/" class="bobobox-link">
-                        <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
-                            View 360 Malioboro
-                        </button>
-                    </router-link>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-4 pb-5">
-            <p style="color: white; text-align: center" class="text-2xl font-bold mt-4">Our Team</p>
-            <div class="flex items-center justify-center mt-3 divide-x">
-                <img :src="founder1" style="object-fit:cover; height: 100px; width: 100px;" />
-                <p class="text-white my-7 mx-5 pl-5"><strong>Indra Gunawan</strong> <br />CEO</p>
-            </div>
-            <div class="flex items-center justify-center mt-3 divide-x">
-                <img :src="founder2" style="object-fit:cover; height: 100px; width: 100px;" />
-                <p class="text-white my-6 mx-5 pl-5"><strong>Antonius Bong</strong> <br /> President</p>
             </div>
         </div>
     </div>
@@ -102,6 +138,9 @@ export default {
           bobo8: require('../assets/images/bobobox/bobo8.jpg'),
           bobo9: require('../assets/images/bobobox/bobo9.jpg'),
           bobo10: require('../assets/images/bobobox/bobo10.jpg'),
+          room1: require('../assets/images/bobobox/room1.png'),
+          room2: require('../assets/images/bobobox/room2.png'),
+          room3: require('../assets/images/bobobox/room3.png'),
           founder1: require('../assets/images/bobobox/founder1.png'),
           founder2: require('../assets/images/bobobox/founder2.png'),
       }
