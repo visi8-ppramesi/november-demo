@@ -1,5 +1,9 @@
 <template>
-    <div class="container">
+    <marzipano 
+        sceneUrl="/assets/scenes/BigBathroom_BLANK.jpg"
+        :arrows="arrows"
+    />
+    <!-- <div class="container">
         <div id="viewer" ref="view" class="h-screen-custom w-screen" @click="getCoords">
         </div>
         <div ref="arrowOne" class="arrow-container">
@@ -10,45 +14,58 @@
                 </svg>
             </router-link>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script>
-import createMarzipano from '../../utils/marzipanoBuilder.js'
+import Marzipano from './components/Marzipano.vue'
 export default {
-    beforeDestroy(){
-        document.body.style.overflow = "visible";
-        this.marzObj.viewer.destroyAllScenes();
+    components: {
+        Marzipano
     },
-    mounted(){
-        const elem = this.$refs.view
-        const arrowOne = this.$refs.arrowOne
-        this.marzObj = createMarzipano(elem, '/assets/scenes/BigBathroom_BLANK.jpg')
-        this.hotSpots.arrowOne = this.marzObj.scene.hotspotContainer().createHotspot(arrowOne, this.coords.arrowOne)
-        document.body.style.overflow = "hidden";
+    // beforeDestroy(){
+    //     document.body.style.overflow = "visible";
+    //     this.marzObj.viewer.destroyAllScenes();
+    // },
+    // mounted(){
+    //     const elem = this.$refs.view
+    //     const arrowOne = this.$refs.arrowOne
+    //     this.marzObj = createMarzipano(elem, '/assets/scenes/BigBathroom_BLANK.jpg')
+    //     this.hotSpots.arrowOne = this.marzObj.scene.hotspotContainer().createHotspot(arrowOne, this.coords.arrowOne)
+    //     document.body.style.overflow = "hidden";
 
-        document.querySelector('#viewer div').style.height = '100vh'
-        document.querySelector('#viewer canvas').style.height = '100vh'
-    },
+    //     document.querySelector('#viewer div').style.height = '100vh'
+    //     document.querySelector('#viewer canvas').style.height = '100vh'
+    // },
     data(){
         return {
-            marzObj: null,
-            hotSpots: {
+            // marzObj: null,
+            // hotSpots: {
 
-            },
-            coords: {
-                arrowOne: { yaw: 1.0887977785746852, pitch: 0.13635887604145935 }
-            }
+            // },
+            // coords: {
+            //     arrowOne: { yaw: 1.0887977785746852, pitch: 0.13635887604145935 }
+            // }
+            arrows: [
+                {
+                    name: 'arrowOne',
+                    link: '/panorama/bigroom',
+                    title: 'Room view',
+                    coord: {
+                        yaw: 1.0887977785746852, pitch: 0.13635887604145935
+                    }
+                },
+            ],
         }
     },
-    methods: {
-        getCoords(e){
-            console.log(this.marzObj.view.screenToCoordinates({x: e.clientX, y: e.clientY}))
-        },
-        updateLocation(){
-            this.hotSpots.arrowOne.setPosition(this.coords.arrowOne)
-        }
-    }
+    // methods: {
+    //     getCoords(e){
+    //         console.log(this.marzObj.view.screenToCoordinates({x: e.clientX, y: e.clientY}))
+    //     },
+    //     updateLocation(){
+    //         this.hotSpots.arrowOne.setPosition(this.coords.arrowOne)
+    //     }
+    // }
 }
 </script>
 

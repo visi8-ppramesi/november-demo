@@ -102,7 +102,7 @@ export default {
                 {
                     name: 'arrowFour',
                     link: '/panorama/frontoffice',
-                    title: 'Small Bobocabin view',
+                    title: 'Front Office view',
                     coord: {
                         yaw: -2.2372505594935816, pitch: -0.06858069755622509
                     }
