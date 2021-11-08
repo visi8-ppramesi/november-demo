@@ -2,6 +2,9 @@
     <div style="background-color: #006f66;" class="h-content">
         <div>
             <div class="flex items-center justify-center">
+                <img class="h-28 pb-2" :src=boboLogo />
+            </div>
+            <div class="flex items-center justify-center">
                 <img class="h-36 pb-3" :src=logo />
             </div>
         </div>
@@ -88,6 +91,7 @@ export default {
    data: function () {
       return {
           logo: require('../assets/images/bobobox/logo.png'),
+          boboLogo: require('../assets/images/bobobox/boboboxLogo.png'),
           bobo1: require('../assets/images/bobobox/bobo1.jpg'),
           bobo2: require('../assets/images/bobobox/bobo2.jpg'),
           bobo3: require('../assets/images/bobobox/bobo3.jpg'),
