@@ -15,14 +15,14 @@
             </p>
         </div>
 
-        <div class="flex p-5">
-            <div>
-                <img class="pb-2" :src=room1 />
-                <img class="pt-2" :src=room3 />
-            </div>
-            <div>
-                <img class="pl-3 h-full" :src=room2 />
-            </div>
+        <div class="grid sm:grid-rows-2 sm:grid-flow-col">
+            <!-- <div> -->
+                <img class="row-span-2 h-full w-full object-fill" :src=room2 />
+                <img class="col-span-1 h-full w-full object-fill" :src=room1 />
+                <img class="col-span-1 h-full w-full object-fill" :src=room3 />
+            <!-- </div>
+            <div> -->
+            <!-- </div> -->
         </div>
 
         <div class="p-5 text-white">
