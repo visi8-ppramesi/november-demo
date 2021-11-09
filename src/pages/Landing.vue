@@ -60,6 +60,12 @@
                     <p style="text-align: center; color: white; font-size: 45px;">Fabelio</p>
                 </router-link>
             </div>
+
+            <div class="mt-12">
+                <router-link :to="'/visi8/'" class="link-type">
+                    <img :src="visiLogo" style=" width: 180px; display: block; margin-left: auto; margin-right: auto;" />
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -78,6 +84,7 @@ export default {
             boboboxLogo: require('../assets/images/bobobox/boboboxLogo.png'),
             fabelioLogo: require('../assets/images/fabelio/logo.png'),
             nirmanaLogo: require('../assets/images/nirmana_kinetik/logo-white.png'),
+            visiLogo: require('../assets/images/visi8/Logo.png'),
         }
     },
     created(){

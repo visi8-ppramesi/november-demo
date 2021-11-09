@@ -80,7 +80,7 @@ let panoramaRouteBuilder = (acc, name) => {
     return acc
 }
 
-let builtRoutes = ['bellsSociety', 'matahari', 'biomagg', 'bluesville', 'fabelio', 'nirmanaKinetik', 'senormal', 'bobobox'].map(el => routeBuilder(el))
+let builtRoutes = ['bellsSociety', 'matahari', 'biomagg', 'bluesville', 'fabelio', 'nirmanaKinetik', 'senormal', 'bobobox', 'visi8'].map(el => routeBuilder(el))
 let panoramaRoutes = [
     'exterior',
     'externalBathroom',
