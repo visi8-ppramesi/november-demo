@@ -72,7 +72,7 @@
         <div class="pb-4">
             <p class="text-2xl font-bold my-4 text-white text-center">Our Founder</p>
             <img :src="founder1" style="height: 100px; width: 150px; display: block; margin-left: auto; margin-right: auto;"/>
-            <p style="color: white; text-align: center;" class="mb-12 mt-4"><strong>Adi Panuntun</strong> <br />Founder 9 Matahari</p>
+            <p style="color: white; text-align: center;" class="mb-12 mt-4"><strong>Adi Panuntun</strong> <br />Founder Sembilan Matahari</p>
         </div>
     </div>
 </template>

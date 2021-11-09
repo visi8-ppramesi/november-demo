@@ -6,27 +6,45 @@ import Swal from 'sweetalert2'
 
 
 function createMarzipano(element, templateUrl) {
+    function removeStorageDeviceOrientationPermissionGranted(){
+        localStorage.removeItem('deviceOrientationPermissionGranted')
+    }
+
     function requestPermissionForIOS() {
-        Swal.fire({
-            title: 'Device orientation permission',
-            text: 'This web app requires your permission to use your phone\'s gyroscope for device orientation.',
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Give permission'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.DeviceOrientationEvent.requestPermission()
-                    .then(response => {
-                        if (response === 'granted') {
-                            enableDeviceOrientation()
-                        }
-                    }).catch((e) => {
-                        console.error(e)
-                    })
-            }
-        })
+        if(localStorage.getItem('deviceOrientationPermissionGranted') === 'true'){
+            window.DeviceOrientationEvent.requestPermission()
+                .then(response => {
+                    if (response === 'granted') {
+                        enableDeviceOrientation()
+                    }
+                }).catch((e) => {
+                    console.error(e)
+                })
+        }else{
+            Swal.fire({
+                title: 'Device orientation permission',
+                text: 'This web app requires your permission to use your phone\'s gyroscope for device orientation.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Give permission',
+                cancelButtonText: 'Do not give permission'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.DeviceOrientationEvent.requestPermission()
+                        .then(response => {
+                            if (response === 'granted') {
+                                localStorage.setItem('deviceOrientationPermissionGranted', 'true')
+                                window.addEventListener('beforeunload', removeStorageDeviceOrientationPermissionGranted)
+                                enableDeviceOrientation()
+                            }
+                        }).catch((e) => {
+                            console.error(e)
+                        })
+                }
+            })
+        }
     }
     
     function enableDeviceOrientation() {

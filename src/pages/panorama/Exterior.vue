@@ -86,7 +86,7 @@ export default {
                 {
                     name: 'arrowTwo',
                     link: '/panorama/bigroom',
-                    title: 'Big Bobocabin view',
+                    title: 'Duluxe Bobocabin view',
                     coord: {
                         yaw: -0.3592824556590202, pitch: -0.36694122816664
                     }
@@ -94,7 +94,7 @@ export default {
                 {
                     name: 'arrowThree',
                     link: '/panorama/smallroom',
-                    title: 'Small Bobocabin view',
+                    title: 'Standard Bobocabin view',
                     coord: {
                         yaw: -1.3722086941415306, pitch: -0.10734399828977104
                     }
