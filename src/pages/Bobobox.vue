@@ -104,14 +104,14 @@
             <div>
                 <div class="flex items-center justify-center py-3">
                     <router-link to="/scene/company/bobobox/model/product1" class="bobobox-link">
-                        <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
+                        <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
                             View With AR
                         </button>
                     </router-link>
                 </div>
-                <div class="flex items-center justify-center pb-5">
+                <div class="flex items-center justify-center pb-3">
                     <router-link to="/panorama/" class="bobobox-link">
-                        <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
+                        <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
                             View 360 Bobocabin
                         </button>
                     </router-link>
