@@ -2,18 +2,31 @@ import {
     DeviceOrientationControlMethod
 } from "./deviceOrientation.js";
 import Marzipano from 'marzipano'
+import Swal from 'sweetalert2'
 
 
 function createMarzipano(element, templateUrl) {
     function requestPermissionForIOS() {
-        window.DeviceOrientationEvent.requestPermission()
-            .then(response => {
-                if (response === 'granted') {
-                    enableDeviceOrientation()
-                }
-            }).catch((e) => {
-                console.error(e)
-            })
+        Swal.fire({
+            title: 'Device orientation permission',
+            text: 'This web app requires your permission to use your phone\'s gyroscope for device orientation.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Give permission'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.DeviceOrientationEvent.requestPermission()
+                    .then(response => {
+                        if (response === 'granted') {
+                            enableDeviceOrientation()
+                        }
+                    }).catch((e) => {
+                        console.error(e)
+                    })
+            }
+        })
     }
     
     function enableDeviceOrientation() {
