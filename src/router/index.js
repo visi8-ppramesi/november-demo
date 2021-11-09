@@ -91,7 +91,8 @@ let panoramaRoutes = [
     'smallRoom', 
     'smallBed', 
     'frontOffice',
-    'malioboro'
+    'malioboro',
+    'fabelioTour'
 ].reduce(panoramaRouteBuilder, {})
 
 export const routes = [

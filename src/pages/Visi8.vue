@@ -86,7 +86,7 @@
                     <p class="text-white my-7 mx-5 pl-5">
                         <strong class="text-lg">Farid Siddik</strong>
                         <br />
-                        Chief Executive Officer
+                        Business Development Director
                         <br />
                         Farid has had a 5 year experience in strategy consulting
                         with PricewaterhouseCoopers in Indonesia and the Middle East.

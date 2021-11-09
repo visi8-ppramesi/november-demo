@@ -133,6 +133,14 @@
                 </section>
             </div>
 
+            <div class="flex items-center justify-center pb-4">
+                <router-link to="/panorama/fabeliotour/" class="bobobox-link">
+                    <button style="background-color: rgb(255 226 101);" class="py-2 mt-3 px-4 rounded-xl">
+                        View Panorama 360 Fabelio Tour
+                    </button>
+                </router-link>
+            </div>
+
             <div class="pb-4">
                 <p class="text-xl font-bold my-4 px-5 text-center">Our Founder</p>
                 <div class="flex items-center justify-center">
