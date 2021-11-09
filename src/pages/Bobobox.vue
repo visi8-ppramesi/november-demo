@@ -17,9 +17,9 @@
 
         <div class="grid sm:grid-rows-2 sm:grid-flow-col">
             <!-- <div> -->
-                <img class="row-span-2 h-full w-full object-fill" :src=room2 />
-                <img class="col-span-1 h-full w-full object-fill" :src=room1 />
-                <img class="col-span-1 h-full w-full object-fill" :src=room3 />
+                <img class="row-span-2 sm:h-full w-full object-fill" :src=room2 />
+                <img class="col-span-1 sm:h-full w-full object-fill" :src=room1 />
+                <img class="col-span-1 sm:h-full w-full object-fill" :src=room3 />
             <!-- </div>
             <div> -->
             <!-- </div> -->
@@ -39,7 +39,7 @@
         <div class="flex items-center justify-center py-3">
             <router-link to="/panorama/malioboro/" class="bobobox-link">
                 <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
-                    View 360 Malioboro
+                    View Panorama 360 Malioboro Tour
                 </button>
             </router-link>
         </div>
@@ -105,14 +105,14 @@
                 <div class="flex items-center justify-center py-3">
                     <router-link to="/scene/company/bobobox/model/product1" class="bobobox-link">
                         <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
-                            View With AR
+                            View Bobocabin With AR
                         </button>
                     </router-link>
                 </div>
                 <div class="flex items-center justify-center pb-3">
                     <router-link to="/panorama/" class="bobobox-link">
                         <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
-                            View 360 Bobocabin
+                            View Panorama 360 Bobocabin Tour
                         </button>
                     </router-link>
                 </div>

@@ -2,11 +2,11 @@
     <div style="background-color: black;">
         <div class="header" :style="'background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(' + redBg + ')'">
             <div class="title-container">
-                <div style="margin-top: 20px;">
+                <!-- <div style="margin-top: 20px;">
                     <img :src="logo" />
-                </div>
-                <div style="margin-left: 20px;">
-                    <img :src="textLogo" />
+                </div> -->
+                <div>
+                    <img :src="logoLogo" />
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ export default {
     name: 'matahari',
     data(){
         return {
-            logo: require('../assets/images/matahari/logo.png'),
+            logoLogo: require('../assets/images/matahari/logo_text_logo.png'),
             textLogo: require('../assets/images/matahari/text_logo.png'),
             pic1: require('../assets/images/matahari/pic1.jpg'),
             pic2: require('../assets/images/matahari/pic2.jpg'),
@@ -106,8 +106,7 @@ export default {
         width: 100%;
         background-size: cover;
         color: white;
-        height: 200px;
-        max-height: 30vh;
+        padding: 15px 0;
     }
 
     .title-container {

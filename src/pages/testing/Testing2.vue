@@ -5,17 +5,16 @@
 <script>
 export default {
     created(){
-        window.addEventListener('message', this.addSomething)
+        window.addEventListener('deviceorientation', (event) => {
+            this.something += JSON.stringify([event.alpha, event.beta, event.gamma])
+        })
     },
     data(){
         return {
-            something: 'qwer'
+            something: 'zxcv'
         }
     },
     methods: {
-        addSomething(data){
-            this.something += JSON.stringify(data)
-        }
     }
 }
 </script>
