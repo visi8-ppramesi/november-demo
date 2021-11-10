@@ -8,51 +8,53 @@
 
         <hr class="ml-5 mr-5" />
 
-        <div>
-            <p class="p-5 text-center italic text-white">
-                <strong class="text-lg">Bobobox</strong> is the first and largest tech-enabled sleeping experience eco-system in Indonesia.
-                Bobobox are sleek capsule hotels equipped with IoT-enabled features to enhance guests’ experience and safety.
-            </p>
-        </div>
-
-        <div class="grid sm:grid-rows-2 sm:grid-flow-col">
-            <!-- <div> -->
-                <img class="row-span-2 sm:h-full w-full object-fill" :src=room2 />
-                <img class="col-span-1 sm:h-full w-full object-fill" :src=room1 />
-                <img class="col-span-1 sm:h-full w-full object-fill" :src=room3 />
-            <!-- </div>
-            <div> -->
-            <!-- </div> -->
-        </div>
-
-        <div class="p-5 text-white">
-            <p class="text-2xl font-bold">Bobobox Has :</p>
-            <ul class="px-5 py-2 list-disc">
-                <li>1.000 pods 14 branches</li>
-                <li>Over 80% Ave. Occupancy Rate</li>
-                <li>Over 90% Millennials and Younger</li>
-                <li>Over 70% NPS and Direct Transactions</li>
-                <li>$8 - $15 per Night</li>
-            </ul>
-        </div>
-
-        <div class="flex items-center justify-center py-3">
-            <router-link to="/panorama/malioboro/" class="bobobox-link">
-                <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
-                    View Panorama 360 Malioboro Tour
-                </button>
-            </router-link>
-        </div>
-
-        <div class="px-4 pb-5">
-            <p style="color: white; text-align: center" class="text-2xl font-bold mt-5">Our Team</p>
-            <div class="flex items-center justify-center mt-3 divide-x">
-                <img :src="founder1" style="object-fit:cover; height: 100px; width: 100px;" />
-                <p class="text-white my-7 mx-5 pl-5"><strong>Indra Gunawan</strong> <br />CEO</p>
+        <div class="max-w-full md:max-w-2xl md:m-auto">
+            <div>
+                <p class="p-5 text-center italic text-white">
+                    <strong class="text-lg">Bobobox</strong> is the first and largest tech-enabled sleeping experience eco-system in Indonesia.
+                    Bobobox are sleek capsule hotels equipped with IoT-enabled features to enhance guests’ experience and safety.
+                </p>
             </div>
-            <div class="flex items-center justify-center mt-3 divide-x">
-                <img :src="founder2" style="object-fit:cover; height: 100px; width: 100px;" />
-                <p class="text-white my-6 mx-5 pl-5"><strong>Antonius Bong</strong> <br /> President</p>
+
+            <div class="grid sm:grid-rows-2 sm:grid-flow-col">
+                <!-- <div> -->
+                    <img class="row-span-2 sm:h-full w-full object-fill" :src=room2 />
+                    <img class="col-span-1 sm:h-full w-full object-fill" :src=room1 />
+                    <img class="col-span-1 sm:h-full w-full object-fill" :src=room3 />
+                <!-- </div>
+                <div> -->
+                <!-- </div> -->
+            </div>
+
+            <div class="p-5 text-white">
+                <p class="text-2xl font-bold">Bobobox Has :</p>
+                <ul class="px-5 py-2 list-disc">
+                    <li>1.000 pods 14 branches</li>
+                    <li>Over 80% Ave. Occupancy Rate</li>
+                    <li>Over 90% Millennials and Younger</li>
+                    <li>Over 70% NPS and Direct Transactions</li>
+                    <li>$8 - $15 per Night</li>
+                </ul>
+            </div>
+
+            <div class="flex items-center justify-center py-3">
+                <router-link to="/panorama/malioboro/" class="bobobox-link">
+                    <button style="background-color: #089c94;" class="text-white py-2 mt-3 px-4 rounded-xl">
+                        View Panorama 360 Malioboro Tour
+                    </button>
+                </router-link>
+            </div>
+
+            <div class="px-4 pb-5">
+                <p style="color: white; text-align: center" class="text-2xl font-bold mt-5">Our Team</p>
+                <div class="flex items-center justify-center mt-3 divide-x">
+                    <img :src="founder1" style="object-fit:cover; height: 100px; width: 100px;" />
+                    <p class="text-white my-7 mx-5 pl-5"><strong>Indra Gunawan</strong> <br />CEO</p>
+                </div>
+                <div class="flex items-center justify-center mt-3 divide-x">
+                    <img :src="founder2" style="object-fit:cover; height: 100px; width: 100px;" />
+                    <p class="text-white my-6 mx-5 pl-5"><strong>Antonius Bong</strong> <br /> President</p>
+                </div>
             </div>
         </div>
 
@@ -66,55 +68,57 @@
 
         <hr class="ml-5 mr-5" />
 
-        <div>
-            <section class="p-5 text-white">
-                <strong class="text-xl">let's see what bobocabin <br /> looks like !</strong>
-            </section>
-        </div>
-
-        <div>
-            <div class="pb-2">
-                <img class="shadow-xl" :src="bobo1" />
-            </div>
-            <div class="scrolling-wrapper pb-5">
-                <div class="bg-white scroller-container mr-1">
-                    <img :src="bobo4" />
-                </div>
-                <div class="scroller-container mr-1">
-                    <img :src="bobo5" />
-                </div>
-                <div class="scroller-container mr-1">
-                    <img :src="bobo6" />
-                </div>
-                <div class="scroller-container mr-1">
-                   <img :src="bobo7" />
-                </div>
-                <div class="scroller-container mr-1">
-                    <img :src="bobo8" />
-                </div>
-                <div class="scroller-container mr-1">
-                    <img :src="bobo10" />
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="text-center text-xl font-bold text-white">Experience with Our AR/VR Feature</div>
-            <img class="pt-3" :src="bobo9" />
+        <div class="max-w-full md:max-w-2xl md:m-auto">
             <div>
-                <div class="flex items-center justify-center py-3">
-                    <router-link to="/scene/company/bobobox/model/product1" class="bobobox-link">
-                        <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
-                            View Bobocabin With AR
-                        </button>
-                    </router-link>
+                <section class="p-5 text-white">
+                    <strong class="text-xl">let's see what bobocabin <br /> looks like !</strong>
+                </section>
+            </div>
+
+            <div>
+                <div class="pb-2">
+                    <img class="shadow-xl" :src="bobo1" />
                 </div>
-                <div class="flex items-center justify-center pb-3">
-                    <router-link to="/panorama/" class="bobobox-link">
-                        <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
-                            View Panorama 360 Bobocabin Tour
-                        </button>
-                    </router-link>
+                <div class="scrolling-wrapper pb-5">
+                    <div class="bg-white scroller-container mr-1">
+                        <img :src="bobo4" />
+                    </div>
+                    <div class="scroller-container mr-1">
+                        <img :src="bobo5" />
+                    </div>
+                    <div class="scroller-container mr-1">
+                        <img :src="bobo6" />
+                    </div>
+                    <div class="scroller-container mr-1">
+                    <img :src="bobo7" />
+                    </div>
+                    <div class="scroller-container mr-1">
+                        <img :src="bobo8" />
+                    </div>
+                    <div class="scroller-container mr-1">
+                        <img :src="bobo10" />
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-center text-xl font-bold text-white">Experience with Our AR/VR Feature</div>
+                <img class="pt-3" :src="bobo9" />
+                <div>
+                    <div class="flex items-center justify-center py-3">
+                        <router-link to="/scene/company/bobobox/model/product1" class="bobobox-link">
+                            <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
+                                View Bobocabin With AR
+                            </button>
+                        </router-link>
+                    </div>
+                    <div class="flex items-center justify-center pb-3">
+                        <router-link to="/panorama/" class="bobobox-link">
+                            <button style="background-color: #089c94;" class="text-white py-2 px-4 rounded-xl">
+                                View Panorama 360 Bobocabin Tour
+                            </button>
+                        </router-link>
+                    </div>
                 </div>
             </div>
         </div>

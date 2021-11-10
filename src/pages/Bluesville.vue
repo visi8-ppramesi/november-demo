@@ -8,7 +8,7 @@
             <hr style="color:white"/>
         </div>
 
-        <div>
+        <div class="max-w-full md:max-w-2xl md:m-auto">
             <div class="px-4">
                 <div class="mt-4 rounded border border-white" style="background-color: #203950;">
                     <div class="m-auto px-5 py-5 text-md" style="color:white;">
@@ -23,24 +23,24 @@
 
             <div class="px-4 mb-12">
                 <p class="text-center font-bold text-xl text-white py-4">Our Founder</p>
-                <div class="mt-8" style="display: flex; justify-content: start;">
+                <div class="mt-8 items-center" style="display: flex; justify-content: start;">
                     <img class="ml-4 mr-3" :src="founder4" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
-                    <div class="ml-4 mt-5 h-7 px-3" style="background-color: #819FB5; border-radius: 50px;">
-                        <p style="color: white; font-weight: 700; text-align: center;" class="text-md">Arundana Pratamasunu</p>
+                    <div class="ml-4 h-7 px-3" style="height: 28px; background-color: #819FB5; border-radius: 50px;">
+                        <p style="height: 28px; line-height:28px; color: white; font-weight: 700; text-align: center;" class="text-md">Arundana Pratamasunu</p>
                     </div>
                 </div>
 
-                <div class="flex mt-8">
+                <div class="flex mt-8 items-center">
                     <img class="ml-4 mr-3" :src="founder2" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;"/>
-                    <div class="ml-4 mt-5 h-7 px-3" style="background-color: #819FB5; border-radius: 50px;">
-                        <p style="color: white; font-weight: 700; text-align: center;" class="text-md">Respati Hafidz Budi</p>
+                    <div class="ml-4 h-7 px-3" style="height: 28px; background-color: #819FB5; border-radius: 50px;">
+                        <p style="height: 28px; line-height:28px; color: white; font-weight: 700; text-align: center;" class="text-md">Respati Hafidz Budi</p>
                     </div>
                 </div>
 
-                <div class="mt-8" style="display: flex; justify-content: start;">
+                <div class="mt-8 items-center" style="display: flex; justify-content: start;">
                     <img class="ml-4 mr-3" :src="founder3" style="border-radius: 50%; height: 5rem; width: 5rem; display: block;" />
-                    <div class="ml-4 mt-5 h-7 px-3" style="background-color: #819FB5; border-radius: 50px;">
-                        <p style="color: white; font-weight: 700; text-align: center;" class="text-md">Osi Suheili</p>
+                    <div class="ml-4 h-7 px-3" style="height: 28px; background-color: #819FB5; border-radius: 50px;">
+                        <p style="height: 28px; line-height:28px; color: white; font-weight: 700; text-align: center;" class="text-md">Osi Suheili</p>
                     </div>
                 </div>
                 
