@@ -5,6 +5,11 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
             </svg>
         </nav>
+        <div class="text-white">
+            <div class="powered fixed rounded-md mt-14 pb-2 w-24" style="background-color: #282828;">
+               <img :src="poweredVisi8"/>
+            </div>
+        </div>
         <router-view :key="key" />
     </div>
 </template>
@@ -16,6 +21,11 @@ export default {
         key() {
             return this.$route.fullPath;
         },
+    },
+     data(){
+        return {
+            poweredVisi8: require('../assets/images/visi8/powered_visi.png'),
+        }
     },
     methods: {
         goBack(){
@@ -37,5 +47,11 @@ export default {
         top: calc(var(--viewport-height) - 84px);
         margin: 10px;
         z-index: 9999;
+    }
+
+    .powered {
+        top: calc(var(--viewport-height) - 79px);
+        left: 70%;
+        opacity: 0.7;
     }
 </style>
