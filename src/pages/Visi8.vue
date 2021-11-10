@@ -32,36 +32,46 @@
         </div>
 
         <div class="text-white">
-            <div class="rounded-tr-lg rounded-br-lg  mt-5 py-3 w-48" style="background-color: #b4d434;">
-                <p class="text-right pr-5 text-xl font-bold">3D</p>
+            <div class="mt-5 grid sm:grid-cols-5 sm:grid-flow-col">
+                <div class="w-full col-span-3">
+                    <div class="rounded-tr-lg rounded-br-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
+                        <p class="text-right pr-5 text-xl font-bold">3D</p>
+                    </div>
+                    <p class="p-5 text-justify">
+                        <strong>Visi 8</strong> is currently making a 3D animated feature film
+                        called Kara Guardian of the Realms that tells story about the mystical
+                        adventure of a young girl chosen to be the guardian of the realms in Terra.
+                        She embarks on a journey together with an overzealous scarecrow, a kind tree spirit
+                        and two human space-time explorers.
+                        <br /><br />
+                        Currently, we are working on a feature animation and VFX support for several
+                        films. At the same time, our services cover new media projects such as AR and VR 
+                        from both the private and publis sector. We also offer programming support for clients
+                        who need mobile apps and websited. We are also developing out own IPs which focus on original
+                        stories from and about Indonesia.
+                    </p>
+                </div>
+                <img class="col-span-2 sm:h-full w-full object-contain" :src=threeD />
             </div>
-            <p class="p-5 text-justify">
-                <strong>Visi 8</strong> is currently making a 3D animated feature film
-                called Kara Guardian of the Realms that tells story about the mystical
-                adventure of a young girl chosen to be the guardian of the realms in Terra.
-                She embarks on a journey together with an overzealous scarecrow, a kind tree spirit
-                and two human space-time explorers.
-            </p>
         </div>
 
-        <div class="grid sm:grid-rows-2 sm:grid-flow-col">
-            <img class="row-span-2 h-full w-full object-fill" :src=threeD />
-        </div>
-
-        <div class="text-white">
-            <div class="rounded-tr-lg rounded-br-lg mt-5 py-3 w-48" style="background-color: #b4d434;">
-                <p class="text-right pr-5 text-xl font-bold">AR / VR</p>
+        <div class="text-white my-12">
+            <div class="mt-5 grid sm:grid-cols-5 sm:grid-flow-col">
+                 <img class="col-span-3 pb-5 sm:h-full w-full object-contain" :src=AR />
+                <div class="w-full col-span-2">
+                    <div class="flex justify-end">
+                        <div class="rounded-tl-lg rounded-bl-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
+                            <p class="text-left pl-5 text-xl font-bold">AR</p>
+                        </div>
+                    </div>
+                    <p class="p-5 text-justify">
+                        <strong>Visi 8</strong> is already embracing the ever expanding media landscape.
+                        Increasing number of media contents are now being presented in many
+                        creative ways using VR and AR. At Visi 8, we have the technology and human
+                        resources to research and develop VR and AR projects tailored to our client's needs.
+                    </p>
+                </div>
             </div>
-            <p class="p-5 text-justify">
-                <strong>Visi 8</strong> is already embracing the ever expanding media landscape.
-                Increasing number of media contents are now being presented in many
-                creative ways using VR and AR. At Visi 8, we have the technology and human
-                resources to research and develop VR and AR projects tailored to our client's needs.
-            </p>
-        </div>
-
-        <div class="grid sm:grid-rows-2 sm:grid-flow-col pb-7">
-            <img class="row-span-2 h-full w-full object-fill" :src=AR />
         </div>
 
         <hr class="ml-5 mr-5 border-4" />
