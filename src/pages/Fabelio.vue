@@ -11,7 +11,7 @@
 
         <div>
             <p class="pl-5 pt-5 text-xl font-bold">Our Products :</p>
-            <div class="grid grid-cols-3 sm:grid-cols-4">
+            <div class="grid grid-cols-3 justify-items-center">
                 <div class="px-5 mt-3">
                     <div class="border border-black bg-white w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">

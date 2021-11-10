@@ -6,7 +6,7 @@
             </svg>
         </nav>
         <div class="text-white">
-            <div class="powered fixed rounded-md mt-14 pb-2 w-24" style="background-color: #282828;">
+            <div class="powered fixed rounded-md w-32" style="background-color: #282828;">
                <img :src="poweredVisi8"/>
             </div>
         </div>
@@ -50,8 +50,8 @@ export default {
     }
 
     .powered {
-        top: calc(var(--viewport-height) - 79px);
-        left: 70%;
+        top: calc(var(--viewport-height) - 30px);
+        right:10px;
         opacity: 0.7;
     }
 </style>
