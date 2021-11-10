@@ -9,7 +9,7 @@
         <hr class="ml-5 mr-5" />
 
         <div class="p-5 text-white text-2xl">
-            <p>WHO <strong>WE ARE ?</strong></p>
+            <p>WHO <strong>WE ARE</strong></p>
         </div>
 
         <hr class="ml-5 w-48 border-4" />
@@ -27,11 +27,11 @@
             </p>
         </div>
 
-        <div style="background-color: #b4d434;">
-            <p class="text-white text-center py-3 text-4xl font-bold">What We Do ?</p>
+        <div style="background-color: #b4d434;" class="my-12">
+            <p class="text-white text-center py-3 text-4xl font-bold">What We Do</p>
         </div>
 
-        <div class="text-white">
+        <div class="text-white my-12">
             <div class="mt-5 grid sm:grid-cols-5 sm:grid-flow-col">
                 <div class="w-full col-span-3">
                     <div class="rounded-tr-lg rounded-br-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
@@ -51,14 +51,14 @@
                         stories from and about Indonesia.
                     </p>
                 </div>
-                <img class="col-span-2 sm:h-full w-full object-contain" :src=threeD />
+                <img class="col-span-3 sm:col-span-2 sm:h-full w-full object-cover" :src=threeD />
             </div>
         </div>
 
         <div class="text-white my-12">
-            <div class="mt-5 grid sm:grid-cols-5 sm:grid-flow-col">
-                 <img class="col-span-3 pb-5 sm:h-full w-full object-contain" :src=AR />
-                <div class="w-full col-span-2">
+            <div class="mt-5 grid sm:grid-cols-4 sm:grid-flow-col">
+                <img class="order-2 sm:order-1 col-span-2 pb-5 sm:h-full w-full object-cover" :src=AR />
+                <div class="order-1 sm:order-2 w-full col-span-2">
                     <div class="flex justify-end">
                         <div class="rounded-tl-lg rounded-bl-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
                             <p class="text-left pl-5 text-xl font-bold">AR</p>
