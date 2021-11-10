@@ -32,8 +32,8 @@
         </div>
 
         <div class="text-white my-12">
-            <div class="mt-5 grid sm:grid-cols-5 sm:grid-flow-col">
-                <div class="w-full col-span-3">
+            <div class="mt-5 grid sm:grid-cols-12 sm:grid-flow-col">
+                <div class="w-full col-span-7">
                     <div class="rounded-tr-lg rounded-br-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
                         <p class="text-right pr-5 text-xl font-bold">3D</p>
                     </div>
@@ -51,7 +51,7 @@
                         stories from and about Indonesia.
                     </p>
                 </div>
-                <img class="col-span-3 sm:col-span-2 sm:h-full w-full object-cover" :src=threeD />
+                <img class="col-span-12 sm:col-span-5 sm:h-full w-full object-cover" :src=threeD />
             </div>
         </div>
 
