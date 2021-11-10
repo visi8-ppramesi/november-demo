@@ -111,6 +111,7 @@ export default {
 
     .title-container {
         display: flex;
+        justify-content: center;
         /* position: absolute;
         left: 15%;
         top: 10%; */

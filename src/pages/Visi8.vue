@@ -70,7 +70,7 @@
             <div class="px-4 pb-5">
                 <p style="color: white; text-align: center" class="text-4xl font-bold mt-5">Our Team</p>
                 <div class="flex items-start justify-start mt-3 divide-x">
-                    <img class="mt-7" :src="founder1" style="border-radius: 50%; height: 100px; width: 150px;" />
+                    <img class="mt-7" :src="founder1" style="border-radius: 50%; height: 100px; width: 10px;" />
                     <p class="text-white my-7 mx-5 pl-5">
                         <strong class="text-lg">Raiyan Laksamana</strong>
                         <br />
