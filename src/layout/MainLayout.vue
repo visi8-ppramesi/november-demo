@@ -6,8 +6,8 @@
             </svg>
         </nav>
         <div class="text-white">
-            <div class="powered fixed rounded-md w-32" style="background-color: #282828;">
-               <img :src="poweredVisi8"/>
+            <div class="powered fixed rounded-md w-32" style="background-color: rgba(40, 40, 40, 0.7);">
+               <img class="powered-by-logo" :src="poweredVisi8"/>
             </div>
         </div>
         <router-view :key="key" />
@@ -50,8 +50,11 @@ export default {
     }
 
     .powered {
-        top: calc(var(--viewport-height) - 30px);
-        right:10px;
-        opacity: 0.7;
+        top: calc(var(--viewport-height) - 32px);
+        right:18px;
+        /* opacity: 0.7; */
+    }
+    .powered-by-logo{
+        width: 100%;
     }
 </style>
