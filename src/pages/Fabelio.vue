@@ -9,9 +9,9 @@
 
         <hr class="ml-5 mr-5" style="border-color: black;" />
 
-        <div>
+        <div class="max-w-full md:max-w-2xl md:m-auto">
             <p class="pl-5 pt-5 text-xl font-bold">Our Products :</p>
-            <div class="grid grid-cols-3 justify-items-center">
+            <div class="grid grid-cols-3 sm:grid-cols-5 justify-items-center">
                 <div class="px-5 mt-3">
                     <div class="border border-black bg-white w-max rounded-lg">
                         <div class="pl-3 pr-3 pt-3 pb-3">
