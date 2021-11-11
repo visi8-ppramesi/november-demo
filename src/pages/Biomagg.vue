@@ -20,12 +20,77 @@
                 </p>
             </div>
 
-            <div class="mb-12">
+            <div class="mb-12 md-block">
+                <div class="flex flex-wrap justify-center">
+                    <div class="md-block-scroller-container m-1">
+                        <router-link to="/scene/company/biomagg/model/product1">
+                            <img class="pt-5 ml-7 object-contain" :src="product1" />
+                            <div class="flex items-center justify-center pt-2">
+                                <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                    View AR
+                                </button>
+                            </div>
+                        </router-link>
+                    </div>
+                    <div class="md-block-scroller-container m-1">
+                        <router-link to="/scene/company/biomagg/model/product2">
+                            <img class="pt-5 ml-7 object-contain" :src="product2" />
+                            <div class="flex items-center justify-center pt-2">
+                                <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                    View AR
+                                </button>
+                            </div>
+                        </router-link>
+                    </div>
+                    <div class="md-block-scroller-container m-1">
+                        <router-link to="/scene/company/biomagg/model/product3">
+                            <img class="pt-5 ml-7 object-contain" :src="product3" />
+                            <div class="flex items-center justify-center pt-2">
+                                <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                    View AR
+                                </button>
+                            </div>
+                        </router-link>
+                    </div>
+                    <div class="md-block-scroller-container m-1">
+                        <router-link to="/scene/company/biomagg/model/product4">
+                            <img class="pt-5 ml-7 object-contain" :src="product4" />
+                            <div class="flex items-center justify-center pt-2">
+                                <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                    View AR
+                                </button>
+                            </div>
+                        </router-link>
+                    </div>
+                    <div class="md-block-scroller-container m-1">
+                        <router-link to="/scene/company/biomagg/model/product5">
+                            <img class="pt-5 ml-7 object-contain" :src="product5" />
+                            <div class="flex items-center justify-center pt-2">
+                                <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                    View AR
+                                </button>
+                            </div>
+                        </router-link>
+                    </div>
+                    <div class="md-block-scroller-container m-1">
+                        <router-link to="/scene/company/biomagg/model/product6">
+                            <img class="pt-5 ml-5 object-contain" :src="product6" />
+                            <div class="flex items-center justify-center pt-2">
+                                <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
+                                    View AR
+                                </button>
+                            </div>
+                        </router-link>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-12 md:hidden">
                 <p class="text-2xl font-bold mb-4" style="color: white; text-align: center;">Our Products</p>
                 <div class="scrolling-wrapper px-1">
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product1">
-                            <img class="pt-5 ml-7" :src="product1" />
+                            <img class="pt-5 ml-7 object-contain" :src="product1" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -35,7 +100,7 @@
                     </div>
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product2">
-                            <img class="pt-5 ml-7" :src="product2" />
+                            <img class="pt-5 ml-7 object-contain" :src="product2" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -45,7 +110,7 @@
                     </div>
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product3">
-                            <img class="pt-5 ml-7" :src="product3" />
+                            <img class="pt-5 ml-7 object-contain" :src="product3" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -55,7 +120,7 @@
                     </div>
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product4">
-                            <img class="pt-5 ml-7" :src="product4" />
+                            <img class="pt-5 ml-7 object-contain" :src="product4" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -65,7 +130,7 @@
                     </div>
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product5">
-                            <img class="pt-5 ml-7" :src="product5" />
+                            <img class="pt-5 ml-7 object-contain" :src="product5" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -75,7 +140,7 @@
                     </div>
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product6">
-                            <img class="pt-5 ml-5" :src="product6" />
+                            <img class="pt-5 ml-5 object-contain" :src="product6" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="mt-1 bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -132,6 +197,16 @@ export default {
 </script>
 
 <style scoped>
+    @media (min-width: 768px){
+        .md-block {
+            display: block;
+        }
+    }
+    @media (max-width: 768px){
+        .md-block {
+            display: none;
+        }
+    }
    .bottom-image{
         max-width: 40vw;
     }
@@ -161,10 +236,19 @@ export default {
     .scrolling-wrapper::-webkit-scrollbar {
         display: none;
     }
-    .scroller-container img{    
+    .md-block-scroller-container img, .scroller-container img{    
         width: 100px;
         height: 270px;
         border-radius: 10px;
+    }
+    .md-block-scroller-container{
+        /* max-height: 334px; */
+        min-width: 150px;
+        /* height: 205px; */
+        border-radius: 10px;
+        max-height: 350px;
+        background-color: white;
+        padding-bottom: 20px;
     }
     .scroller-container{
         /* max-height: 334px; */

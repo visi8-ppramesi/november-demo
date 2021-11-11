@@ -44,7 +44,7 @@
                 <div class="scrolling-wrapper px-1">
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product1">
-                            <img class="pt-5" :src="product1" />
+                            <img class="pt-5 object-contain" :src="product1" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -54,7 +54,7 @@
                     </div>
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product2">
-                            <img class="pt-5" :src="product2" />
+                            <img class="pt-5 object-contain" :src="product2" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR
@@ -64,7 +64,7 @@
                     </div>
                     <div class="scroller-container mr-1">
                         <router-link to="/scene/company/biomagg/model/product3">
-                            <img class="pt-5" :src="product3" />
+                            <img class="pt-5 object-contain" :src="product3" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
                                     View AR

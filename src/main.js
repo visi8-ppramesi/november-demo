@@ -5,7 +5,17 @@ import '@/assets/css/tailwind.css'
 import '@/assets/css/main.css'
 
 window.axios = require('axios')
-
+// window.AFRAME.registerComponent('responsive-immersive', {
+//     init(){
+//         const onAttach = ({sessionAttributes}) => {
+//             console.log(sessionAttributes)
+//         }
+//         const onxrloaded = () => {
+//             window.XR8.addCameraPipelineModules([{'name': 'responsiveImmersive', onAttach}])
+//         }
+//         window.XR8 ? onxrloaded() : window.addEventListener('xrloaded', onxrloaded)
+//     },
+// });
 Vue.config.productionTip = false
 
 new Vue({
