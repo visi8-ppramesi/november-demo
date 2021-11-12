@@ -17,6 +17,7 @@ window.axios = require('axios')
 //     },
 // });
 Vue.config.productionTip = false
+Vue.prototype.$modelUrls = require('./utils/modelUrls.json')
 
 new Vue({
     render: h => h(App),

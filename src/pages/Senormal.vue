@@ -174,6 +174,14 @@ export default {
             product3: require('../assets/images/senormal/product3.png'),
             product4: require('../assets/images/senormal/product4.png'),
         }
+    },
+    created(){
+        const promises = Object.values(this.$modelUrls.senormal).map((url) => {
+            return fetch(url)
+        })
+        Promise.allSettled(promises).then((vals) => {
+            console.log(vals)
+        })
     }
 }
 </script>

@@ -193,6 +193,14 @@ export default {
             founder2: require('../assets/images/biomagg/founder2.png'),
         }
     },
+    created(){
+        const promises = Object.values(this.$modelUrls.biomagg).map((url) => {
+            return fetch(url)
+        })
+        Promise.allSettled(promises).then((vals) => {
+            console.log(vals)
+        })
+    }
 }
 </script>
 

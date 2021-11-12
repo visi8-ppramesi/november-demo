@@ -162,16 +162,24 @@
 export default {
    name: 'fabelio',
    data: function () {
-      return {
-          logo: require('../assets/images/fabelio/logo.png'),
-          product1: require('../assets/images/fabelio/product1.png'),
-          product2: require('../assets/images/fabelio/product2.png'),
-          product3: require('../assets/images/fabelio/product3.png'),
-          product4: require('../assets/images/fabelio/product4.png'),
-          product5: require('../assets/images/fabelio/product5.png'),
-          founder1: require('../assets/images/fabelio/founder1.png'),
-          founder2: require('../assets/images/fabelio/founder2.png'),
-      }
+        return {
+            logo: require('../assets/images/fabelio/logo.png'),
+            product1: require('../assets/images/fabelio/product1.png'),
+            product2: require('../assets/images/fabelio/product2.png'),
+            product3: require('../assets/images/fabelio/product3.png'),
+            product4: require('../assets/images/fabelio/product4.png'),
+            product5: require('../assets/images/fabelio/product5.png'),
+            founder1: require('../assets/images/fabelio/founder1.png'),
+            founder2: require('../assets/images/fabelio/founder2.png'),
+        }
+    },
+    created(){
+        const promises = Object.values(this.$modelUrls.fabelio).map((url) => {
+            return fetch(url)
+        })
+        Promise.allSettled(promises).then((vals) => {
+            console.log(vals)
+        })
     }
 }
 </script>

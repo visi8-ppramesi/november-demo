@@ -43,7 +43,7 @@
                 
                 <div class="scrolling-wrapper px-1">
                     <div class="scroller-container mr-1">
-                        <router-link to="/scene/company/biomagg/model/product1">
+                        <router-link to="/scene/company/bellssociety/model/product1">
                             <img class="pt-5 object-contain" :src="product1" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
@@ -53,7 +53,7 @@
                         </router-link>
                     </div>
                     <div class="scroller-container mr-1">
-                        <router-link to="/scene/company/biomagg/model/product2">
+                        <router-link to="/scene/company/bellssociety/model/product2">
                             <img class="pt-5 object-contain" :src="product2" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
@@ -63,7 +63,7 @@
                         </router-link>
                     </div>
                     <div class="scroller-container mr-1">
-                        <router-link to="/scene/company/biomagg/model/product3">
+                        <router-link to="/scene/company/bellssociety/model/product3">
                             <img class="pt-5 object-contain" :src="product3" />
                             <div class="flex items-center justify-center pt-2">
                                 <button class="bg-blue-500 hover:bg-blue-2oo text-white py-1 px-2 rounded">
@@ -109,6 +109,14 @@ export default {
             product3: require('../assets/images/bells_society/product3.png'),
             pic: require('../assets/images/bells_society/pic.jpg'),
         }
+    },
+    created(){
+        const promises = Object.values(this.$modelUrls.bellssociety).map((url) => {
+            return fetch(url)
+        })
+        Promise.allSettled(promises).then((vals) => {
+            console.log(vals)
+        })
     }
 }
 </script>

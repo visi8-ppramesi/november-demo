@@ -102,6 +102,14 @@ export default {
             founder4: require('../assets/images/bluesville/founder4.png'),
         }
     },
+    created(){
+        const promises = Object.values(this.$modelUrls.bluesville).map((url) => {
+            return fetch(url)
+        })
+        Promise.allSettled(promises).then((vals) => {
+            console.log(vals)
+        })
+    }
 }
 </script>
 

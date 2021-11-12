@@ -152,6 +152,12 @@ export default {
     created(){
         var img = new Image();
         img.src = '/assets/scenes/Exterior_BLANK.jpg';
+        const promises = Object.values(this.$modelUrls.bobobox).map((url) => {
+            return fetch(url)
+        })
+        Promise.allSettled(promises).then((vals) => {
+            console.log(vals)
+        })
     }
 }
 </script>

@@ -5,6 +5,7 @@ const { _ } = require('lodash')
 
 const templatePath = path.join(path.resolve(), 'stubs', 'Scene.html.stub')
 const scenePath = path.join(path.resolve(), 'src', 'scenes')
+const utilPath = path.join(path.resolve(), 'src', 'utils')
 const replacerTokens = [
     '%%id%%',
     '%%model_url%%',
@@ -15,6 +16,7 @@ const replacerTokens = [
     '%%entity_scale_y%%', 
     '%%entity_scale_z%%',
 ]
+let jsonModelPaths = {}
 try {
     if (fs.existsSync(templatePath)) {
         let template = fs.readFileSync(templatePath, 'utf8')
@@ -66,15 +68,26 @@ try {
                     let modelUrl = [modelObj.baseUrl, [itemName, modelObj.name].join('-') + '.glb'].join('/')
                     let modelUrlRegex = new RegExp('%%model_url%%', "g")
                     myTemplate = myTemplate.replace(modelUrlRegex, modelUrl)
+                    if(jsonModelPaths[itemName]){
+                        jsonModelPaths[itemName][modelObj.name] = modelUrl
+                    }else{
+                        jsonModelPaths[itemName] = { [modelObj.name]: modelUrl }
+                    }
                 }else{
                     let modelUrl = [config.defaultBaseUrl, [itemName, modelObj.name].join('-') + '.glb'].join('/')
                     let modelUrlRegex = new RegExp('%%model_url%%', "g")
                     myTemplate = myTemplate.replace(modelUrlRegex, modelUrl)
+                    if(jsonModelPaths[itemName]){
+                        jsonModelPaths[itemName][modelObj.name] = modelUrl
+                    }else{
+                        jsonModelPaths[itemName] = { [modelObj.name]: modelUrl }
+                    }
                 }
                 let fileName = [itemName, modelObj.name].join('-') + '.html'
                 fs.writeFileSync(path.join(scenePath, fileName), myTemplate)
             })
         })
+        fs.writeFileSync(path.join(utilPath, 'modelUrls.json'), JSON.stringify(jsonModelPaths))
         console.log('Scenes created!')
     }
 } catch(err) {
