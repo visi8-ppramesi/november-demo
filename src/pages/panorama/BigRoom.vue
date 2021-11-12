@@ -105,6 +105,12 @@ export default {
             ],
         }
     },
+    created(){
+        var img1 = new Image();
+        img1.src = '/assets/scenes/BigBed_BLANK.jpg';
+        var img2 = new Image();
+        img2.src = '/assets/scenes/BigBathroom_BLANK.jpg';
+    }
     // methods: {
     //     getCoords(e){
     //         console.log(this.marzObj.view.screenToCoordinates({x: e.clientX, y: e.clientY}))

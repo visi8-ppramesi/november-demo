@@ -116,6 +116,16 @@ export default {
             // }
         }
     },
+    created(){
+        var img1 = new Image();
+        img1.src = '/assets/scenes/ExternalBathroom_BLANK.jpg';
+        var img2 = new Image();
+        img2.src = '/assets/scenes/BigRoom_BLANK.jpg';
+        var img3 = new Image();
+        img3.src = '/assets/scenes/SmallRoom_BLANK.jpg';
+        var img4 = new Image();
+        img4.src = '/assets/scenes/FrontOffice_BLANK.jpg';
+    }
     // methods: {
     //     getCoords(e){
     //         console.log(this.marzObj.view.screenToCoordinates({x: e.clientX, y: e.clientY}))

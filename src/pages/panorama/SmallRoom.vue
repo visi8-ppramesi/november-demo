@@ -77,6 +77,10 @@ export default {
             ],
         }
     },
+    created(){
+        var img1 = new Image();
+        img1.src = '/assets/scenes/SmallBed_BLANK.jpg';
+    }
     // methods: {
     //     getCoords(e){
     //         console.log(this.marzObj.view.screenToCoordinates({x: e.clientX, y: e.clientY}))

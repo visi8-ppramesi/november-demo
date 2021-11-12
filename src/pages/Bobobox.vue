@@ -129,25 +129,29 @@
 export default {
    name: 'bobobox',
    data: function () {
-      return {
-          logo: require('../assets/images/bobobox/logo.png'),
-          boboLogo: require('../assets/images/bobobox/boboboxLogo.png'),
-          bobo1: require('../assets/images/bobobox/bobo1.jpg'),
-          bobo2: require('../assets/images/bobobox/bobo2.jpg'),
-          bobo3: require('../assets/images/bobobox/bobo3.jpg'),
-          bobo4: require('../assets/images/bobobox/bobo4.jpg'),
-          bobo5: require('../assets/images/bobobox/bobo5.jpg'),
-          bobo6: require('../assets/images/bobobox/bobo6.jpg'),
-          bobo7: require('../assets/images/bobobox/bobo7.jpg'),
-          bobo8: require('../assets/images/bobobox/bobo8.jpg'),
-          bobo9: require('../assets/images/bobobox/bobo9.jpg'),
-          bobo10: require('../assets/images/bobobox/bobo10.jpg'),
-          room1: require('../assets/images/bobobox/room1.png'),
-          room2: require('../assets/images/bobobox/room2.png'),
-          room3: require('../assets/images/bobobox/room3.png'),
-          founder1: require('../assets/images/bobobox/founder1.png'),
-          founder2: require('../assets/images/bobobox/founder2.png'),
-      }
+        return {
+            logo: require('../assets/images/bobobox/logo.png'),
+            boboLogo: require('../assets/images/bobobox/boboboxLogo.png'),
+            bobo1: require('../assets/images/bobobox/bobo1.jpg'),
+            bobo2: require('../assets/images/bobobox/bobo2.jpg'),
+            bobo3: require('../assets/images/bobobox/bobo3.jpg'),
+            bobo4: require('../assets/images/bobobox/bobo4.jpg'),
+            bobo5: require('../assets/images/bobobox/bobo5.jpg'),
+            bobo6: require('../assets/images/bobobox/bobo6.jpg'),
+            bobo7: require('../assets/images/bobobox/bobo7.jpg'),
+            bobo8: require('../assets/images/bobobox/bobo8.jpg'),
+            bobo9: require('../assets/images/bobobox/bobo9.jpg'),
+            bobo10: require('../assets/images/bobobox/bobo10.jpg'),
+            room1: require('../assets/images/bobobox/room1.png'),
+            room2: require('../assets/images/bobobox/room2.png'),
+            room3: require('../assets/images/bobobox/room3.png'),
+            founder1: require('../assets/images/bobobox/founder1.png'),
+            founder2: require('../assets/images/bobobox/founder2.png'),
+        }
+    },
+    created(){
+        var img = new Image();
+        img.src = '/assets/scenes/Exterior_BLANK.jpg';
     }
 }
 </script>
