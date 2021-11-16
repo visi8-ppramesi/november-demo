@@ -152,7 +152,7 @@ export default {
           founder1: require('../assets/images/visi8/CEO.png'),
           founder2: require('../assets/images/visi8/BDD.png'),
           iframeSrc1: 'https://www.youtube.com/embed/IHpP7CCseTE',
-          iframeSrc2: 'https://www.youtube.com/embed/IHpP7CCseTE',
+          iframeSrc2: 'https://www.youtube.com/embed/R0G8VZrzYqY',
       }
     }
 }
