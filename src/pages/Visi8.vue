@@ -73,6 +73,38 @@
                 </div>
             </div>
 
+            <div style="background-color: #b4d434;" class="my-12">
+                <p class="text-white text-center py-3 text-4xl font-bold">Our Works</p>
+            </div>
+
+            <div class="text-white my-12">
+                <div class="mt-5 grid sm:grid-cols-12 sm:grid-flow-col">
+                    <div class="w-full col-span-7">
+                        <div class="rounded-tr-lg rounded-br-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
+                            <p class="text-right pr-5 text-xl font-bold">3D</p>
+                        </div>
+                        <div>
+                            <iframe class="embed-video" :src="iframeSrc1">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-white my-12">
+                <div class="mt-5 grid sm:grid-cols-4 sm:grid-flow-col">
+                     <iframe class="embed-video order-2 sm:order-1 col-span-2 pb-5 sm:h-full w-full " :src="iframeSrc2">
+                    </iframe>
+                    <div class="order-1 sm:order-2 w-full col-span-2">
+                        <div class="flex justify-end">
+                            <div class="rounded-tl-lg rounded-bl-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
+                                <p class="text-left pl-5 text-xl font-bold">AR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <hr class="ml-5 mr-5 border-4" />
 
             <div>
@@ -119,7 +151,19 @@ export default {
           AR: require('../assets/images/visi8/AR.png'),
           founder1: require('../assets/images/visi8/CEO.png'),
           founder2: require('../assets/images/visi8/BDD.png'),
+          iframeSrc1: 'https://www.youtube.com/embed/IHpP7CCseTE',
+          iframeSrc2: 'https://www.youtube.com/embed/R0G8VZrzYqY',
       }
     }
 }
 </script>
+
+<style scoped>
+    .embed-video{
+        display: block; 
+        margin: 0 auto; 
+        margin-top: 16px; 
+        width:100vw;
+        height: calc(0.5625 * 100vw);
+    }
+</style>
