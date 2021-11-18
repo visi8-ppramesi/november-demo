@@ -177,13 +177,18 @@ export default {
         .embed-video{
             position: relative;
             left: calc(-1 * (100vw - 42rem) / 2);
+            width:calc(100vw - 8px);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .embed-video{
+            width:100vw;
         }
     }
     .embed-video{
         display: block; 
         margin: 0 auto; 
         margin-top: 16px; 
-        width:100vw;
         height: calc(0.5625 * 100vw);
     }
 </style>
