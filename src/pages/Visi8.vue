@@ -76,7 +76,7 @@
             <div style="background-color: #b4d434;" class="my-12">
                 <p class="text-white text-center py-3 text-4xl font-bold">Our Works</p>
             </div>
-
+<!-- 
             <div class="text-white my-12">
                 <div class="mt-5 grid sm:grid-cols-12 sm:grid-flow-col">
                     <div class="w-full col-span-7">
@@ -89,19 +89,33 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="text-white my-12">
+                <div class="mt-5 flex flex-col">
+                    <div class="w-full">
+                        <div class="flex justify-start">
+                            <div class="rounded-tr-lg rounded-br-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
+                                <p class="text-right pl-5 text-xl font-bold">3D</p>
+                            </div>
+                        </div>
+                    </div>
+                     <iframe class="embed-video pb-5 sm:h-full w-full " :src="iframeSrc1">
+                    </iframe>
+                </div>
             </div>
 
             <div class="text-white my-12">
-                <div class="mt-5 grid sm:grid-cols-4 sm:grid-flow-col">
-                     <iframe class="embed-video order-2 sm:order-1 col-span-2 pb-5 sm:h-full w-full " :src="iframeSrc2">
-                    </iframe>
-                    <div class="order-1 sm:order-2 w-full col-span-2">
+                <div class="mt-5 flex flex-col">
+                    <div class="w-full">
                         <div class="flex justify-end">
                             <div class="rounded-tl-lg rounded-bl-lg pr-5 pt-2 h-10 w-48" style="background-color: #b4d434;">
                                 <p class="text-left pl-5 text-xl font-bold">AR</p>
                             </div>
                         </div>
                     </div>
+                     <iframe class="embed-video pb-5 sm:h-full w-full " :src="iframeSrc2">
+                    </iframe>
                 </div>
             </div>
 
@@ -159,6 +173,12 @@ export default {
 </script>
 
 <style scoped>
+    @media screen and (min-width: 768px) {
+        .embed-video{
+            position: relative;
+            left: calc(-1 * (100vw - 42rem) / 2);
+        }
+    }
     .embed-video{
         display: block; 
         margin: 0 auto; 
